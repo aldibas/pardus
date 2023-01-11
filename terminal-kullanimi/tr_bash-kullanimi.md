@@ -228,6 +228,8 @@ Aşağıdaki tabloda **koyu** renkli komutların hataya neden olacak şekilde ya
 
 </br>
 
+### Komutlarda Yönlendirme
+
 GNU/Linux komutlarını kullanırken komutların işlevlerini birleştirerek -birlikte kullanarak- çok hızlı sonuçlar alabilirsiniz.
 
 
@@ -274,6 +276,11 @@ seq 1000 | paste -s -d+ | bc
 >"**|**" karakteri ile komutların gücünü birlikte kullanarak, tek satırlık bu kodun çıktısı gibi süreç alacak işlemleri hızlıca sonuçlandırabiliriz.
 
 
+>"**>**","**<**" karakterleri ile bir komutun çıktısını başka bir kaynağa yazabiliriz.
+``` {.sh}
+echo merhaba dünya > mesaj
+```
+komutu echo komutunda çıktı olan "merhaba dünya" ifadesini mesaj dosyasına yazar.
 
 </br>
 

@@ -4,6 +4,14 @@
             {
                 "text": "tr_ucbirim-hakkinda.md",
                 "verify":"verify1.json"
+            },
+            {
+                "text": "tr_bash-kullanimi.md",
+                "verify":"verify1.json"
+            },
+            {
+                "text": "tr_bash-kullanimi.md",
+                "verify":"verify1.json"
             }
         ],
         "intro": {

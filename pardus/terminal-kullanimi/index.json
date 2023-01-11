@@ -1,0 +1,23 @@
+{
+    "scenario": {
+        "steps": [
+            {
+                "text": "tr_ucbirim-hakkinda.md",
+                "verify":"verify1.json"
+            }
+        ],
+        "intro": {
+            "text": "intro.md"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "video": {}
+    },
+    "environment": {
+        "uilayout": "editor-terminal"
+    },
+    "backend": {
+        "imageid": "alpine"
+    }
+}

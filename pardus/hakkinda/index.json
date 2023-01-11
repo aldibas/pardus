@@ -1,0 +1,38 @@
+{
+    "scenario": {
+      "steps": [
+        {
+          "text": "tr_pardus-hakkinda.md"
+        },
+         {
+          "text": "tr_free-software.md"
+        },
+         {
+          "text": "tr_open-source.md"
+        },
+         {
+          "text": "tr_kernel-shell.md"
+        },
+         {
+          "text": "tr_gui.md"
+        }
+      ],
+      "intro": {
+        "text": "intro.md"
+      },
+      "finish": {
+        "text": "finish.md"
+      },
+      "video": {
+        "text": {
+          "tr": "https://youtu.be/8-3BitUZmCQ"
+        }
+      }
+    },
+    "environment": {
+      "uilayout": ""
+    },
+    "backend": {
+      "imageid": "alpine"
+    }
+  }

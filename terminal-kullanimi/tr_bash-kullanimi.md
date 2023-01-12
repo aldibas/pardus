@@ -3,7 +3,7 @@
 ### Bash kabuğunda komut girişi
 
 
-**BaSH** kabuğunda **help** yazarak **dahili** komutların listesiniz alabiliriz. Çalıştırılabilir komutların listesi için **/usr/bin** ve **/usr/sbin** dizinlerini **ls** komutu ile listeleyebiliriz.
+**BaSH** kabuğunda **help** yazarak **dahili** komutların listesiniz alabiliriz. 
 
 **Dahili komutlar:**
 </br>
@@ -13,13 +13,16 @@ help
 ```
 </br>
 
-Bulunduğumu konumdaki dosyalar:
+Daha sonra detaylı inceleyeceğimiz "**ls**" -list- komutu ile çalışma dizinimiz ya da belirttiğimiz konumdaki dosyaların listesiniz alabiliriz.
+
+ Bulunduğumuz konumdaki dosyalar:
 
 ``` {.sh}
 ls
 ```
 </br>
 
+ Çalıştırılabilir komutların listesi için **/usr/bin** ve **/usr/sbin** dizinlerini **ls** komutu ile listeleyebiliriz.
 
 **Çalıştırılabilir komutlar:**
 
@@ -228,67 +231,7 @@ Aşağıdaki tabloda **koyu** renkli komutların hataya neden olacak şekilde ya
 
 </br>
 
-### Komutlarda Yönlendirme
-
-GNU/Linux komutlarını kullanırken komutların işlevlerini birleştirerek -birlikte kullanarak- çok hızlı sonuçlar alabilirsiniz.
 
 
->"**Pipe**" -boru- "**|**" karakteri bir komutun çıktısını -**output**-, başka bir komuta girdi -**input**- olarak göndermemizi sağlar.
-
-</br>
-
-**Örnekler:**
-
-"**history**" komutu ile komut geçmişimizi görebiliriz.
-
-``` {.sh}
-history   
-```
-Ancak kullandığımız komut sayısı fazla ise bu komut geçmişimizi "**pipe**" -**|**- karakteri ile "**more**" komutuna göndererek sayfa sayfa görüntüleyebiliriz.
-
-``` {.sh}
-history | more  
-```
->Ekran çıktısında;<br>
-sayfa sayfa ilerlemek için "**space**" -boşluk-,</br>
-satır satır ilerlemek için "**enter**" -giriş-,</br>
-Çıkış için "**Q**"
-tuşunu kullanın. 
-
-Bu örnekten anlaşılacağı üzere history komutunun çıktısı, "**|**" karakteri ile  standart output aygıtı -ekran gibi- yerine "**more**" komutuna gönderilmiştir.
-
-Örnek 2: 1000 e karadar olan sayıları toplayalım:
-
-"**seq**" komutu ile sayıları ekrana yazdırabiliriz.
-``` {.sh}
-seq 1000 
-```
-"**paste**" komutunda, "**s**" -serial- parametresi ile bu sayıları yan yana, "**d**" parametresi ile de araya "+" koyarak yazdırabiliriz.
-
-``` {.sh}
-seq 1000 | paste -s -d+
-```
-Son olarak bu çıktıyı "bc" -**B**asic **C**alculator- uygulamasına göndererek sonucu yazdırabiliriz.
-
-``` {.sh}
-seq 1000 | paste -s -d+ | bc
-```
->"**|**" karakteri ile komutların gücünü birlikte kullanarak, tek satırlık bu kodun çıktısı gibi süreç alacak işlemleri hızlıca sonuçlandırabiliriz.
-
-
->"**>**","**<**" karakterleri ile bir komutun çıktısını başka bir kaynağa yazabiliriz.
-``` {.sh}
-echo merhaba dünya > mesaj
-```
-komutu echo komutunda çıktı olan "merhaba dünya" ifadesini mesaj dosyasına yazar.
-
-</br>
-
-
-command $(command)
-command `command`
-
-
-
-
+[Komutlarda Yönlendirme](./tr_stdin-stdout-stderr-yonlendirme.md)
 

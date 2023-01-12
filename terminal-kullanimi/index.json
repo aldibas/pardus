@@ -10,7 +10,7 @@
                 "verify":"verify1.json"
             },
             {
-                "text": "tr_bash-kullanimi.md",
+                "text": "tr_stdin-stdout-stderr-yonlendirme.md",
                 "verify":"verify1.json"
             }
         ],

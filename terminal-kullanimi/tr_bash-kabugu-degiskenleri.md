@@ -135,11 +135,139 @@ env
 echo $USER
 ```
 
-HOME, USER, SHELL, PWD, LANG, LOGNAME ve PATH değişkenlerinin içeriklerin yazdırınız.
+HOME, USER, SHELL, PWD, LANG, LOGNAME ve PATH değişkenlerini içeriklerin yazdırınız.
+
+Konunun daha iyi anlaşılması için PATH değişkenini detay örnek ile inceleyelim.
+
+``` {.sh}
+echo $PATH
+```
+Çıktı:
+
+```
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+```
+
+Yukarıdaki çıktıda da gördüğünüz gibi **harici** çalıştırılabilir komutların bulundukları konumlara **-bin-** bir yol tanımı yapılmış. Dolayısı ile **ls** yazdığımızda çalışma dizinimizde olamayan uygulamaları çalıştırabiliyoruz. Bu nasıl mümkün oluyor? 
+
+Eğer **PATH** değişkeni ile **bir yol** tanımı yapılmamış olsaydı çalıştırmak istediğimiz bir komutun tam adresini -yolunu- yazmak zorunda kalacaktık. 
 
 
+>**Yerleşik komutlar**, kabuğun kendisinde bulunup başka bir program çağırmadan doğrudan kabuk tarafından yürütülen komutlardır. 
 
-### alias 
+
+Şimdi PATH değişkeninin içeriğini sıfırlayalım. Ancak **PATH** değişkenin tekrar eski değerine **hızlıca** döndürmek için **YOL** isminde bir değişkene aktaralım. 
+
+``` {.sh}
+YOL=$PATH
+```
+
+Artık **YOL** değişkeni ile **PATH** değişkenlerinin içerikleri aynı.
+
+**PATH** değişkenin içeriğini "**unset**" komutu ya da aşağıdaki şekilde sıfırlayabiliriz. -**unset PATH**-
+
+``` {.sh}
+PATH=""
+```
+
+Şimdi örnek birkaç harici komut çalıştırmayı deneyelim...
+
+``` {.sh}
+whoami
+```
+
+Çıktı:
+
+```
+-bash: whoami: No such file or directory
+```
+
+---
+
+``` {.sh}
+ls
+```
+
+Çıktı:
+```
+-bash: ls: No such file or directory
+```
+
+---
+
+Artık bu **harici** komutları adreslerini yazarak çalıştırabiliriz.
+
+``` {.sh}
+/usr/bin/whoami
+```
+
+``` {.sh}
+/usr/bin/ls
+```
+
+</br>
+
+Ancak, **yerleşik** -dahili- komutların kullanımında bir değişiklik yok.
+
+``` {.sh}
+echo "echo, kabuğun kendisinde olan yerleşik bir komuttur."
+```
+
+</br>
+
+>Bir komutun yerleşik ya da harici bir komut olup olamdığına "**type**" komutu ile bakabiliriz. Örneğin; **type echo**
+
+</br>
+
+``` {.sh}
+type echo
+```
+
+Çıktı:
+
+```
+echo is a shell builtin
+```
+
+---
+
+``` {.sh}
+type whoami
+```
+
+Çıktı:
+
+```
+whoami is /usr/bin/whoami
+```
+
+---
+
+``` {.sh}
+type ls
+```
+
+Çıktı:
+
+```
+ls is hashed (/usr/bin/ls)
+```
+ya da
+
+```
+ls is aliased to `ls --color=auto'
+```
+
+---
+</br>
+
+Üst satırdaki "**aliased**" kelimesinin nereden geldiğine bakalım:
+
+</br>
+
+### **alias** 
+
+
 
 
 </br>

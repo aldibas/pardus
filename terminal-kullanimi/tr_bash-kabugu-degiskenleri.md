@@ -248,7 +248,6 @@ seq 1000 | paste -s -d+ | bc
 ```
 >"**|**" karakteri ile komutların gücünü birlikte kullanarak, tek satırlık bu kodun çıktısı gibi süreç alacak işlemleri hızlıca sonuçlandırabiliriz.
 
-</br>
 
 Sonraki : [Bash kabuğu değişkenleri](tr_bash-kabugu-degiskenleri.md)
 

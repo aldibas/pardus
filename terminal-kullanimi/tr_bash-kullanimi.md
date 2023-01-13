@@ -1,7 +1,8 @@
-## Bash Kullanımı
+## **Bash Kullanımı**
 
-### Bash kabuğunda komut girişi
+### **Bash kabuğunda komut girişi**
 
+</br>
 
 **BaSH** kabuğunda **help** yazarak **dahili** komutların listesiniz alabiliriz. 
 

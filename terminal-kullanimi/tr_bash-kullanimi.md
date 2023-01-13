@@ -231,7 +231,54 @@ Aşağıdaki tabloda **koyu** renkli komutların hataya neden olacak şekilde ya
 
 </br>
 
+>Bash kabuğunda bir komutun çıktısını başka bir komutun diziliminde kullanabiliriz.
+
+``` {.sh}
+echo merhaba $(whoami)   
+```
+
+Bu kullanımda "**echo**" komutu aşağıdaki çıktıyı üretecektir. komutunun 
+
+```
+senol@pardus:~$ echo merhaba $(whoami)
+merhaba senol
+```
+
+Benzer bir kullanım olan aşağıdaki yöntemle de karşılaşabilirsiniz.
+
+``` {.sh}
+echo merhaba `whoami`   
+```
+
+**Örnekler:**
+
+---
 
 
-[Komutlarda Yönlendirme](./tr_stdin-stdout-stderr-yonlendirme.md)
+``` {.sh}
+echo "Şu anda $(pwd) dizinindesiniz ve $(uname) kullanıyorsunuz."   
+```
+
+Çıktı:
+
+```
+senol@pardus:~$ echo "Şu anda $(pwd) dizinindesiniz ve $(uname) kullanıyorsunuz."
+Şu anda /home/senol dizinindesiniz ve Linux kullanıyorsunuz.
+```
+---
+
+``` {.sh}
+echo "5 + 5 toplamı : $(expr 5 + 5)"
+```
+
+Çıktı:
+
+```
+senol@pardus:~$ echo "5 + 5 toplamı : $(expr 5 + 5)"
+5 + 5 toplamı : 10
+```
+---
+</br>
+
+Sonraki: [Komutlarda Yönlendirme](./tr_stdin-stdout-stderr-yonlendirme.md)
 

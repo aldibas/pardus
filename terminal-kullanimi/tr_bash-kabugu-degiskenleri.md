@@ -265,10 +265,145 @@ ls is aliased to `ls --color=auto'
 
 </br>
 
-### **alias** 
+### Takma Adlar -**alias**- 
+</br>
+
+Yerleşik ya da dış komutları kullanırken kabu üzerinde sık kullandığımız komutların yine sık kullandığımız parametreleri var ise bunları sürekli yazmak zaman alacağı gibi parametrenin ne olduğunu da hatırlamamızı ya da kılavuz dosyalarına -man pages- bakmamızı gerektirir. İşte tam da bu noktada **alias** komutu bizi bu durumdan kurtaracaktır.
+
+>alias komutu ile bir veya daha fazla komutu bir isim ile ifade edebiliriz. Çoğu kabukta sık kullanılan komutlar **rc dosyalarında**
+tanımlı gelebilir. Örneğin BaSH kabuğu için (.bashrc) dosyasında  alias içeren satırları ***grep alias ~/.bashrc** ile listeleyebiliriz.
+
+
+Konuyu basit bir örnek ile ele alalım:
+
+**USB** aygıtlarımız için **lsusb**, PCI aygıtlarımız için **lspci**
+komutlarını kullanabileceğimizden bahsetmiştik. Bu komutların her ikisini yazmak yerine sadece **aygit** yazarak aynı çıktıyı almak için aşağıdaki tanımlamayı yapabiliriz.
+
+
+``` {.sh}
+alias aygit='lsusb; lspci'
+```
+
+Artık oturumumuz süresince aşağıdaki gibi **aygit** ifadesini kullanabilşiriz.
+
+``` {.sh}
+aygit
+```
+
+>Yukarıdaki bu taımlamayı kalıcı yapmak istersek kabuk rc dosyasına -bash kabuğu için **.bashrc** yazmak yeterlidir.-
+
+Diğer takma adları -**alias**- görmek için **alias** komutunu kullanabiliriz.
+
+``` {.sh}
+alias
+```
+
+```
+alias aygit='lsusb; lspci'
+alias grep='grep --color=auto'
+alias ll='ls -l'
+alias ls='ls --color=auto'
+alias pardus='cowsay -f pardus'
+```
+
+
+>Bir **alias** tanımını kaldırmak için **unalias** komutunu kullanabiliriz.
+
+``` {.sh}
+unalias aygit
+```
 
 
 
+Tekrar **alias** komutunu kullanrak aygit isimli tanımlamanın kalktığını görebiliriz.
+
+
+```
+alias grep='grep --color=auto'
+alias ll='ls -l'
+alias ls='ls --color=auto'
+alias pardus='cowsay -f pardus'
+```
+
+Üstteki listede **ls** için de bir tanımlama yapıldığını görüyoruz. Buradaki **color=auto** parametresini sürekli yazmamak için bu tanımlamanın yapıldığı açık. Şimdi **ls** komutunu kullanarak aldığımız çıktıyı inceleyelim. -Sizde bu tanımlama yok ise ekleyebilirsiniz.-
+
+``` {.sh}
+ls
+```
+
+Aldığınız çıktıda kısayol, dosya ve dizinlerin farklı renklendiğini görüyoruz. Çünkü **ls** yazdığımızda sistem ilk olarak **alias** listesine ardından **PATH** değişkeninde tanımlı konumlara bakmaktadır.
+
+>**type** komutu ile bir komutun yerleşik ya da dış komut olup olmadığına bakabileceğimizden bahsetmiştik. Aynı durum alias tanımları için de geçerlidir.
+
+``` {.sh}
+type ls
+```
+
+```
+senol@pardus:~$ type ls
+ls is aliased to `ls --color=auto'
+```
+
+Bir takma ismi kaldırmadan komutun adresini yazarak alias tanımını pas geçebiliriz.
+
+``` {.sh}
+/usr/bin/ls
+```
+
+Yukarıdaki komut ile aldığımız çıktıda **color=auto** parametresi kullanılmamış olacağından çıktı tek renkli gelecektir.
+
+>Bir komutun konumuna **which** komutu ile bakabiliriz.
+
+``` {.sh}
+which ls
+```
+
+>Bir takma ismi pas geçmek için "**\\**" karakterini de kullanabiliriz.
+
+``` {.sh}
+\ls
+```
+</br>
+Örnekler:
+
+Daha sonra detaylı inceleyeceğimiz **man** -manual- komutu ile komutlar hakkında yardım alabiliriz. Aldığımız yardım çıktısının istediğimiz bir dilde görüntülenmesi için **manpath** parametresine istediğimiz dilin kılavuz dosyalarının konumunu girmeliyiz. Sürekli bu bir konumu belirtmek zaman alacağından aşağıdaki **alias** tanımınıyapabiliriz.
+
+``` {.sh}
+alias mantr='man --manpath=/usr/share/man/tr'
+```
+
+Üstteki tanımlamayı yaptıktan sonra Türkçe yardım almak için **man** yerine **mantr** yazabiliriz.
+
+
+``` {.sh}
+mantr ls
+```
+
+Tanımlı takma ad listesi için **alias** komutunu kullandığımızda,
+
+``` {.sh}
+alias
+```
+
+
+
+aşağıdaki çıktı listelenecektir.
+
+
+```
+alias grep='grep --color=auto'
+alias ll='ls -l'
+alias ls='ls --color=auto'
+alias mantr='man --manpath=/usr/share/man/tr'
+alias pardus='cowsay -f pardus'
+```
+
+
+>Tanımlı tüm takma ad listesini kaldırmak için **unalias** komutunda **a** parametresini kullanabiliriz.
+
+``` {.sh}
+unalias -a
+```
 
 </br>
 Sonraki : [Bash komut yapısı -syntax-](tr_komut-yapisi-.md)

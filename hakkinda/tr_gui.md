@@ -123,7 +123,9 @@ X Pencere Sistemi için ücretsiz ve açık kaynaklı bir masaüstü ortamıdır
 **Xfce**, GNU/Linux ve Unix benzeri sistemlerle uyumlu, sade olmasına karşın modern bir masaüstü ortamından beklenen işlevselliği sağlayan, oldukça hafif, kullanımı kolay bir masaüstü ortamıdır.
 </br>
 </br>
+</br>
 
+<img align="center" width="100%" src="../md_images/xfce.png">
 
 | **Tanım** | XForms Common Environment |
 |-----------|----------| 

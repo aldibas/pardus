@@ -39,3 +39,6 @@ Pardus ekibi ülkemizde yaygınlaştırılması, destekleyici bir ekosistemin ge
 <p align="right">
 Özgürlük içn Pardus!
 </p>
+
+
+Sonraki  >>  [Özgür Yazılım -freesoftware-](../hakkinda/tr_free-software.md)

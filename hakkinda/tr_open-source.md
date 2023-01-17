@@ -51,3 +51,7 @@ Lisans maddeleri bir teknoloji ya da arayüz dayatması yapamaz.
 ### Neden Özgür Yazılım?
 Bilimin gelişmesi elbette bilgininin paylaşılmasıyla mutlak hızına ulaşabilir. İletişimde sembollerin -yazı- kullanılmaya başlaması bilginin gelecek nesillere aktarımını sağlamış ve bilgi birikimi bizi bugünlere taşımıştır. Bilgiyi kapatmadan ‑tekelleştirmeden- insanlığın yararına paylaşmak bizleri geleceğe daha hızlı taşıyacaktır. Bilgiyi açık bir şekilde paylaşmak özgür/açık kaynak yazılım, özgür/açık belge, özgür teknoloji lisansları ile mümkündür. Özgür ve açık kaynak yazılım lisansları, kapalı kaynak -sahipli- yazılım lisanslarının aksine kullanıcıların haklarını korur ve bu lisanslara sahip yazılımlar birlikte üretmeye ‑geliştirmeye- daima açıktır.
 >“Özgür” ve “Açık Kaynak” yazılımlara ileriki senaryolarda değineceğiz ancak daha kapsamlı bilgi için [gnu.org](https://gnu.org) ve [opensource.org](https://opensource.org) adreslerini ziyaret edebilirsiniz.
+
+</br>
+</br>
+Sonraki  >>  [Çekirdek ve Kabuk -kernel&shell-](../hakkinda/tr_kernel-shell.md)

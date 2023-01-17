@@ -406,6 +406,7 @@ unalias -a
 ```
 
 </br>
-Sonraki : [Bash komut yapısı -syntax-](tr_komut-yapisi.md)
+
+Sonraki >> [Bash komut yapısı -syntax-](../terminal-kullanimi/tr_komut-yapisi.md)
 
 

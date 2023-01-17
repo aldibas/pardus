@@ -83,3 +83,4 @@ Bu ayarlar, buradaki senaryoda farklılık gösterebilir. PS1 değişkeninde **P
 
 **Görev :  senol@pardus:~\$** şeklindeki birincil promptunuzda -PS1-, hostname yerine zaman görüntülensin. Sonuç : **senol@17:05:~$** gibi.
 
+Sonraki  >>  [Uçbirim / Terminal ](../terminal-kullanimi/tr_bash-kullanimi.md)

@@ -41,3 +41,5 @@ Edindiğimiz programın kopyalarını bedelli ya da bedelsiz dağıtabiliriz.
 **Geliştirilen/Değiştirilen yazılımı yayımlama özgürlüğü...**
 
 Yazılımın değiştirdiğimiz sürümlerini temel özgürlüklerle çelişmeyecek, yeniden dağıtıma engel olmayacak şekilde yayımlayabiliriz. 
+
+Sonraki  >>  [Açık Kaynak -opensource-](../hakkinda/tr_open-source.md)

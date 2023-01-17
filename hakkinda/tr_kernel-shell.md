@@ -41,11 +41,14 @@ Bu eğitimde “bash" kabuğu üzerinde uygulamalar gerçekleştireceğiz.
 
 - **Fish**
 
-<br >
-<br >
-<br >
+</br>
+</br>
+</br>
 
-<br >
+</br>
 
 >>Araştırma konuları: UNIX, BSD 
-<br >
+</br>
+</br>
+
+Sonraki  >>  [Masaüstü Ortamları -GUI-](../hakkinda/tr_gui.md)

@@ -127,6 +127,9 @@ X Pencere Sistemi için ücretsiz ve açık kaynaklı bir masaüstü ortamıdır
 
 <img align="center" width="100%" src="../md_images/xfce.png">
 
+</br>
+</br>
+
 | **Tanım** | XForms Common Environment |
 |-----------|----------| 
 | **İşletim sistemi** | Unix benzeri | 
@@ -138,5 +141,7 @@ X Pencere Sistemi için ücretsiz ve açık kaynaklı bir masaüstü ortamıdır
 
 </br>
 
->>Biz bu eğitimlerimizde grafik arayüz yerine "Uçbirim (Console)" kullanımı ve GNU/Linux komutlarına değineceğiz..
+>>Biz bu eğitimlerimizde grafik arayüz yerine "Uçbirim -Console/Teminal-" ve GNU/Linux kabuk -BaSH shell- kullanımına değineceğiz..
 </br>
+
+Sonraki  >>  [Uçbirim / Terminal ](../terminal-kullanimi/tr_ucbirim-hakkinda.md)

@@ -4,10 +4,10 @@
 
 Özgür Yazılım, kullanıcılara yazılımı çalıştırma, anlama, değiştirme ve yazılımın değiştirilmiş  halini dağıtma kısıtlaması koymayan yazılımdır. Bilimin gelişmesindeki bilgiyi paylaşma olgusunun, teknolojik gelişimde de olması için yazılımların ve belgelendirmenin bu felsefede geliştirilmesi gerektiğini savunan topluluk hareketidir. **“Özgür Yazılım Hareketi”**  27 Eylül 1983 yılında **Richard Matthew Stallman** tarafından duyurulmuş ve Ocak 1984 ‘te başlamıştır. ...
 
-http://article.olduse.net/771@mit-eddie.UUCP
+[article.olduse.net/771@mit-eddie.UUCP](http://article.olduse.net/771@mit-eddie.UUCP)
 
 
->>>_{ **Free Unix!**
+>>_{ **Free Unix!**
 Starting this Thanksgiving I am going to write a complete Unix-compatible software system called GNU (for Gnu's Not Unix), and give it away free to everyone who can use it. Contri­butions of time, money, programs and equipment are greatly needed. .....}_
 
 **Richard Stallman**, Unix’e benzeyen ancak Unix olmayan, Unix ile uyumlu bir çekirdek ve ihtiyaç duyulacak yazılımları/araçları içerecek GNU projesini bu e-postası ile  başlatmıştır. **"GNU”** ismi, **“GNU's Not Unix (GNU, Unix Değildir)”** ifadesinin özyinelemeli bir kısaltmasıdır. 

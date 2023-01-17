@@ -36,6 +36,6 @@ Pardus, _**Debian GNU/Linux**_ temelli Özgür ve Açık Kaynak kodlu bir işlet
 Pardus’un, kamu kurum ve kuruluşları ile KOBİ’lerde kolay yaygınlaştırılabilmesi için kurumsal ihtiyaçları karşılayan Açık Kaynak kodlu alt projeleri bulunmaktadır. Lider Ahenk Merkezi Yönetim Sistemi, Engerek Kimlik Yönetim Sistemi, Ahtapot Bütünleşik Siber Güvenlik Sistemi, Etkileşimli Tahta Arayüz Projesi (ETAP) bunların başlıcalarıdır.
 
 Pardus ekibi ülkemizde yaygınlaştırılması, destekleyici bir ekosistemin gelişmesi için çalışmalar yapmaktadır. Özgür Yazılımlar konusunda konferans, çalıştaylar ve eğitimler düzenlemekte; **Mustafa Akgül Özgür Yazılım Yaz Kampı, Mustafa Akgül Özgür Yazılım Kış Kampı (Akademik Bilişim), Pardus ve Açık Kaynak Günleri** gibi organizasyonlara destek vermekte; Teknofest, Özgür Yazılım ve Linux Günleri gibi organizasyonlara katılım sağlamaktadır. Ayrıca kamuoyunu bilgilendirmek için **Açık Belge Biçimi (ODF)** portalı, Özgür Yazılım faaliyetlerini özendirmek için **Açık Kaynak Kod Platformu** gibi projeleri başlatmıştır.
-<div align="right">
+<p align="right">
 Özgürlük içn Pardus!
-</div>
+</p>

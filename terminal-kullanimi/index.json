@@ -12,6 +12,14 @@
             {
                 "text": "tr_stdin-stdout-stderr-yonlendirme.md",
                 "verify":"verify1.json"
+            },
+            {
+                "text": "tr_bash-kabugu-degiskenleri.md",
+                "verify":"verify1.json"
+            },
+            {
+                "text": "tr_komut-yapisi.md",
+                "verify":"verify1.json"
             }
         ],
         "intro": {

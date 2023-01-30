@@ -281,5 +281,5 @@ senol@pardus:~$ echo "5 + 5 toplamı : $(expr 5 + 5)"
 ---
 </br>
 
-Sonraki: [Komutlarda Yönlendirme](./tr_stdin-stdout-stderr-yonlendirme.md)
+ [Uçbirim -Terminal- hakkında](./tr_ucbirim-hakkinda.md) << Önceki / Sonraki >> [Komutlarda Yönlendirme](./tr_stdin-stdout-stderr-yonlendirme.md)
 

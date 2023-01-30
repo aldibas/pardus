@@ -250,6 +250,6 @@ seq 1000 | paste -s -d+ | bc
 
 </br>
 
-Sonraki  >>  [Bash kabuğu değişkenleri](tr_bash-kabugu-degiskenleri.md)
+ [Bash kullanımı](./tr_bash-kullanimi.md) << Önceki / Sonraki  >>  [Bash kabuğu değişkenleri](tr_bash-kabugu-degiskenleri.md)
 
 

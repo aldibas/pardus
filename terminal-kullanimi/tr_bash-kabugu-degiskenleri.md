@@ -18,29 +18,29 @@ echo Merhaba ${AD}
 
 Bu komut aşağıdaki gibi bir çıktı üretecektir.
 
-```
+``` {echo}
 senol@pardus:~$ echo Merhaba ${AD}
 Merhaba Pardus
 ```
 
 Aşağıdaki çıktılardaki farkları inceleyiniz...
 
-```
+``` {echo}
 senol@pardus:~$ AD="PARDUS" && echo Merhaba ${AD,}
 Merhaba pARDUS
 ```
 
-```
+``` {echo}
 senol@pardus:~$ AD="PARDUS" && echo Merhaba ${AD,,}
 Merhaba pardus
 ```
 
-```
+``` {echo}
 senol@pardus:~$ AD="pardus" && echo Merhaba ${AD^}
 Merhaba Pardus
 ```
 
-```
+``` {echo}
 senol@pardus:~$ AD="pardus" && echo Merhaba ${AD^^}
 Merhaba PARDUS
 ```
@@ -55,42 +55,45 @@ AD="Pardus" && echo Merhaba ${AD:0:3}
 ```
 
 Bu kullanımda çıktı aşağıdaki gibi "Merhaba Par" olacaktır.
-```
+
+``` {echo}
 senol@pardus:~$ AD="Pardus" && echo Merhaba ${AD:0:3}
 Merhaba Par
 ```
 
 Aşağıdaki çıktılardaki farkları inceleyiniz...
 
-```
+``` {echo}
 senol@pardus:~$ ad="Pardus" && echo Merhaba ${ad:1:4}
 Merhaba ardu
 ```
 
-```
+``` {echo}
 senol@pardus:~$ AD="Pardus" && echo Merhaba ${AD:1:}
 Merhaba
 ```
-```
+
+``` {echo}
 senol@pardus:~$ AD="Pardus" && echo Merhaba ${AD: -3:2}
 Merhaba du
 ```
 
-```
+``` {echo}
 senol@pardus:~$ AD="Pardus" && echo Merhaba ${AD: -3}
 Merhaba dus
 ```
 
-```
+``` {echo}
 senol@pardus:~$ AD="Pardus" && echo " Pardus isminde ${#AD} karakter var"
 Pardus isminde 6 karakter var
 ```
+
 </br>
 
 Şimdi, BaSH kabuğu başlarken tanımlanan çevre değişkenlerine bakalım. Bu değişkenler tüm kullanıcılar için ortak tanımlanıyor olabileceği gibi oturum açan kullanıcı için, kullanıcının ev dizinindeki yapılandırma dosyaları ile kendisine özel de tanımlanabilir.
 
 Bu dosyalardan birkaçı:
-```
+``` {echo}
 /etc/profile
 
 ~/.profile
@@ -144,7 +147,7 @@ echo $PATH
 ```
 Çıktı:
 
-```
+``` {echo}
 /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
 ```
 
@@ -178,7 +181,7 @@ whoami
 
 Çıktı:
 
-```
+``` {echo}
 -bash: whoami: No such file or directory
 ```
 
@@ -189,7 +192,8 @@ ls
 ```
 
 Çıktı:
-```
+
+``` {echo}
 -bash: ls: No such file or directory
 ```
 
@@ -225,7 +229,7 @@ type echo
 
 Çıktı:
 
-```
+``` {echo}
 echo is a shell builtin
 ```
 
@@ -237,7 +241,7 @@ type whoami
 
 Çıktı:
 
-```
+``` {echo} 
 whoami is /usr/bin/whoami
 ```
 
@@ -249,12 +253,12 @@ type ls
 
 Çıktı:
 
-```
+``` {echo}
 ls is hashed (/usr/bin/ls)
 ```
 ya da
 
-```
+``` {echo}
 ls is aliased to `ls --color=auto'
 ```
 
@@ -298,7 +302,7 @@ Diğer takma adları -**alias**- görmek için **alias** komutunu kullanabiliriz
 alias
 ```
 
-```
+``` {echo}
 alias aygit='lsusb; lspci'
 alias grep='grep --color=auto'
 alias ll='ls -l'
@@ -387,10 +391,9 @@ alias
 
 
 
-aşağıdaki çıktı listelenecektir.
+**mantr** tanımlamasını aşağıdaki çıktıdaki gibi görebiliriz.
 
-
-```
+``` {echo}
 alias grep='grep --color=auto'
 alias ll='ls -l'
 alias ls='ls --color=auto'
@@ -407,6 +410,6 @@ unalias -a
 
 </br>
 
-Sonraki >> [Bash komut yapısı -syntax-](../terminal-kullanimi/tr_komut-yapisi.md)
+ [Komutlarda yönlendirme](./tr_stdin-stdout-stderr-yonlendirme.md) << Önceki  /  Sonraki >> [Bash komut yapısı -syntax-](../terminal-kullanimi/tr_komut-yapisi.md)
 
 

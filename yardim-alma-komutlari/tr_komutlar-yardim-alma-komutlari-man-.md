@@ -23,5 +23,5 @@
 
 </br>
 
- [Komut yapısı](./tr_komut-yapisi.md) << Önceki / Sonraki >> [Yardım alma komutları -man-](./.md)
+ [Dosya adları ve Joker karakterler](../terminal-kullanimi/tr_dosya-adlari.md) << Önceki / Sonraki >> [Yardım alma komutları -man-](./.md)
 

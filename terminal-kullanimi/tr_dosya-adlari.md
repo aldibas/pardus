@@ -243,21 +243,73 @@ Bu bilgiler doğrultusunda desen örneklerini daha da genişletebiliriz ancak ç
 
 >**!** ve **^** eşleşmeyen karakterleri eşleştirir. -**Değil/NOT**-
 
+</div>
+
+<br>
+
+Aşağıdaki komutları uygulayın...
+
+``` {.sh}
+ls /dev/tt*
+```
+
+``` {.sh}
+ls /etc/*.conf /etc/*.cfg
+```
+
+``` {.sh}
+echo /etc/*.?
+```
+
+``` {.sh}
+ls -d /etc/*.?
+```
 
 
+``` {.sh}
+ls /sys/bus/cpu/devices/cpu[1-4]
+```
+
+``` {.sh}
+echo /sys/bus/cpu/devices/cpu[1-3]
+```
+
+``` {.sh}
+touch file{1..10}.txt
+```
 
 
+``` {.sh}
+ls
+```
 
+
+``` {.sh}
+rm file[1-58].txt
+```
+
+Listeleme yapmadan önce üstteki komutun hangi dosyaları sileceğiniz tahmin etmeye çalışın.
+
+``` {.sh}
+ls
+```
 
  
+ saat:dakika_gün-ay-yıl.png formatında isimlerden oluşan bir fotoğraf albümünde 2013 yılının 10-15 Ağustos aralığında saat akşam 5 ile 6 arasında oluşmuş/çekilmiş dosyaları gösteren paterni -deseni- düşünün.
+ Örnek dosya adı : 05:09_30-08-2020.jpg
+
+
 
 </br>
 
 
 
+
+
+
 Daha detaylı bilgi için "Düzenli İfadeler" -**Regular Expressions**- konusunu inceleyebilirsiniz.
 
-</div>
+
 
 
 

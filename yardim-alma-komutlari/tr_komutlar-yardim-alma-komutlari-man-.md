@@ -1,4 +1,4 @@
-## **Uçbirim Komutları**
+## **Terminal & Kabuk -Shell- Komutları**
 
 ### Yardım Alma Komutları 
 
@@ -30,7 +30,12 @@ man man
 
 komutunu kullanabilirsiniz.
 
-Kılavuz dosyasından **q** ile çıkış yapabilirsiniz.
+>Kılavuz dosyasından **q** ile çıkış yapabilirsiniz.
+
+>Kılavuz dosyalarında, **Enter** -giriş- tuşu ile satır satır, **Space** -boşluk- tuşu ile sayfa sayfa haraket edebilirsiniz.
+
+>Klavuz dosyalarında arama yapmak için, arama mentinden önce "**/**" -aşağı yönde-, ve "**?**" -yukarı doğru- karakterleri kullanılır.
+
 
 Komutun dizilimi;
 ```
@@ -78,27 +83,71 @@ man 5 passwd
 
 Komut seçenekleri : -**OPTIONS**- [a,c,d,D,f,k,K,l,i,I,.....]
 
-| Desen | | Anlamı |
-|:--:|:--:|--|
-| -f, --whatis | » | Kılavuz dosyasının **TANIM** kısmını -kısa bilgi- görüntüler.|
-| | » |  |
-|  | » |  |
-|  | » |  |
-
-
+| Seçenek | | Anlamı |
+|--|:--:|--|
+| -f, --whatis | » | Kılavuz dosyasının tanım **NAME** kısmını -kısa bilgi- görüntüler.|
+| -k, --apropos | » | Klavuz dosyalarının **NAME** kısmında anahtar kelimeyi arar.  |
+| -K, --global-apropos | » | Tüm kılavuz sayfalarında metni arar. |
+| -M, --manpath | » | Kılavuz dosyası konumunu belirler. Farklı dillerde yardım almak için kullanılabilir. |
+| -i, --ignore-case | » | BÜYÜK/küçük harf duyarlılığını kaldırır. Öntanımlı olarak gelir.|
+| -I, --match-case | » | BÜYÜK/küçük harf duyarlılığı yapar. |
 
 <br>
 
-<div style="color:red;"> 
+<br>
+Örnekler:
 
-.
+---
+ls komutunun kısa açıklaması için;
 
-</div>
+``` {.sh}
+man -f ls
+```
+"**-i**" seçeneği öntanımlı oldugundan oyun bölümü kılavuz dosyası olan "**LS**" için kısa açıklama -TANIM- bilgisi de gelecektir.
+
+Çıktı:
+
+```
+senol@pardus:~$ man -f ls
+LS (6)  - display animations aimed to correct users who accidentally enter LS instead of ls.
+ls (1)  - list directory contents
+
+```
+
+---
+
+
+
+</br>
+
+---
+ **-k** seçeneği ile, kılavız dosyalarının **isim & tanım** -**NAME**- kısımlarında arama yapabiliriz. 
+
+
+``` {.sh}
+man -k "user password"
+```
+
+**"user password"** anahtar kelimesine göre ilgili komutların listesi:
+
+```
+senol@pardus:~$ man -k "user password"
+chage (1)   - change user password expiry information
+passwd (1)  - change user password
+```
+<br>
+
+>Yukarıdaki örnekten de anlaşılacağı üzere **-k** seçeneği, **apropos** komutu gibi, bir amaca yönelik kullanabileceğimiz komutları listeleyerek yol seçmemizi sağlar. Kullanmanız gereken komutu belirledikten sonra yine **man** komutu ile kullanımı hakkında bilgi alabilirsiniz.
+
+
+
+
+
 
 ---
 
 
 </br>
 
- [Dosya adları ve Joker karakterler](../terminal-kullanimi/tr_dosya-adlari.md) << Önceki / Sonraki >> [Yardım alma komutları -man-](./.md)
+ [Dosya adları ve Joker karakterler](../terminal-kullanimi/tr_dosya-adlari.md) << Önceki / Sonraki >> [Yardım alma komutları -whatis-](./tr_komutlar-yardim-alma-komutlari-whatis-.md)
 

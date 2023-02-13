@@ -7,7 +7,7 @@
 
 |    Tanım     | Açık Kaynak kodlu GNU/Linux işletim sistemi dağıtımı.    |
 |--------------|------------------|
-|**Başlangıç**    | 2005   |
+|**Başlangıç**    | 2003   |
 |**İlk sürüm**    | 04.02.2005 ( Pardus Live CD 1.0  -Gentoo )  |
 |**Kurulabilir Sürüm** | 27.12.2005 ( Pardus Linux 1.0  -PiSi ) |
 |**Diğer Versiyonlar**|PiSi: 2007, 2008, 2009, 2011 Debian: Pardus 2013, Pardus K. 5, Pardus 17, 19,21|

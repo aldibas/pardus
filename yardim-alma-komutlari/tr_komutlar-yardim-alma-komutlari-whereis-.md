@@ -7,6 +7,8 @@
 
 </br>
 
+
+
 Komutların çalıştırılabilir ve kaynak dosyaları ile kılavuz sayfalarının konumlarını görüntüler.
 
 
@@ -25,9 +27,10 @@ Komut seçenekleri : -**OPTIONS**- [b,m,s,u,B,M,S,f,l,h,v...]
 
 | Desen | | Anlamı |
 |--|:--:|--|
-| -b | » |  |
-| -m | » |  |
-| -s | » |  |
+| -b | » | Binary -ikili- dosyaların konumunda arama yapar ve sonuçları listeler. |
+| -m | » | Kılavuz -manual- dosyalarının konumunda arama yapar ve sonuçları listeler .  |
+| -s | » | Kaynak kodların konumunda arama yapar ve sonuçları listeler. |
+| -l | » | üst satırlardaki seçenekler kullanılmadığında aramanın yapılacağı konumları listeler. |
 | -h, --help | » | Kullanımı ile ilgili yardım görüntüler. |
 | -V, --version | » | Versiyon -sürüm- bilgisini görüntüler. |
 
@@ -83,9 +86,9 @@ whereis -m ls
 senol@pardus:~$ whereis -m ls
 ls: /usr/share/man/man1/ls.1.gz
 ```
-
-
 ---
+
+
 
 
 </br>

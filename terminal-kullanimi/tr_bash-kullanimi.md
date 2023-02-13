@@ -214,9 +214,11 @@ Whoami || echo $USER
 
 Bu şekilde kullanımda "**W**hoami" büyük "**W**" karakterinden kaynaklı hataya sebep olacağı için istediğimiz amaca ulaşamamış olacağımızdan **echo #USER** komutu çalışacaktır.
 masını engellemeycektir. Aşağıdaki çıktı "**W**hoami" değil "**echo #USER**" komutunun çıktısıdır.
+
 ```
 senol
 ```
+
 Aşağıdaki tabloda **koyu** renkli komutların hataya neden olacak şekilde yazıldığını varsayarsak, dizilime göre 2. sütundaki komutlar kabuk ile etkileşime geçecektir -çalışacaktır-. Bir komutun hata üretmesi çalışmıyor yanılgısına düşürmemeli.
 
 |Dizilim|Çalışan komutlar|

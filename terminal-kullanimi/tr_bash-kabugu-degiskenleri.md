@@ -106,8 +106,8 @@ Kullanıcının ev "**~**" dizinindeki "**.profile** ve **.bashrc** dosyaları "
 ls -a
 ```
 
-Kolay akılda kalması için, tam karşılığı olmasa da;
->"**.**" ile başlayan dosyalar gizli dosyalardır."
+
+>"**.**" ile başlayan dosyalar **ls** komutu ile alınan standart çıktıda **listelenmezler**. Bu dosyaların da lşstelenmesi için "**-a**" seçeneği kullanılmalıdır. 
 
 diyebiliriz.
 

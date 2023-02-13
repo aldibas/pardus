@@ -16,11 +16,15 @@ Yardım alma Komutları
 	tr_komutlar-yardim-alma-komutlari-man-
 	tr_komutlar-yardim-alma-komutlari-whatis-
 	tr_komutlar-yardim-alma-komutlari-whereis-
+	tr_komutlar-yardim-alma-komutlari-which-
+	tr_komutlar-yardim-alma-komutlari-type-
+Basit Sistem Bilgisi Alma Komutları
+	uname
+Dosya Sistemleri ve GNU/Linux Dosya Sistemi Yapısı
+Dosya Yönetimi
 
 Metin İşleme
 
-Dosya Sistemleri ve GNU/Linux Dosya Sistemi Yapısı
-Dosya Yönetimi
 Donanım Yönetimi
 Bölge ve Dil ayarlarının yapılandırılması
 Kullanıcı ve Grup Yönetimi

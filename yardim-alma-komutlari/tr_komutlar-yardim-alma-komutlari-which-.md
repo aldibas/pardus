@@ -2,34 +2,29 @@
 
 ### Yardım Alma Komutları 
 
-#### **whereis** 
+#### **which** 
 
 
 </br>
 
-Komutların çalıştırılabilir ve kaynak dosyaları ile kılavuz sayfalarının konumlarını görüntüler.
-
-
-
+**PATH** değişkeninde tanımlı konumlardaki ikili -**binary**- dosyalarda arama yapar. 
 
 
 Komutun dizilimi;
+
 ```
-whereis [options] <name>
+which [options] <argüman>
 ```
 
 
 <br>
 
-Komut seçenekleri : -**OPTIONS**- [b,m,s,u,B,M,S,f,l,h,v...]
+Komut seçenekleri : -**OPTIONS**- [a]
 
-| Desen | | Anlamı |
+| Seçenek | | Anlamı |
 |--|:--:|--|
-| -b | » |  |
-| -m | » |  |
-| -s | » |  |
-| -h, --help | » | Kullanımı ile ilgili yardım görüntüler. |
-| -V, --version | » | Versiyon -sürüm- bilgisini görüntüler. |
+| -a | » | **PATH** değişkeninde tanımlanan adreslerdeki eşlenen binary -ikili- dosyaların tamamının konumunu listeler. |
+
 
 <br>
 
@@ -40,62 +35,41 @@ Komut seçenekleri : -**OPTIONS**- [b,m,s,u,B,M,S,f,l,h,v...]
 ls komutu ve klavuz dosyalarının konumunu görüntülemek için:
 
 ``` {.sh}
-whereis ls
+which ls
 ```
 
 
 Çıktı:
 
 ```
-senol@pardus:~$ whereis ls
-ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz
+senol@pardus:~$ which ls
+/usr/bin/ls
 ```
 
 ---
 <br>
 
-**ls** komutunun sadece konumu için:
+PATH değişkeninde tanımlı yollardaki tüm **ls** konumları için:
 
 ``` {.sh}
-whereis -b ls
+which -a ls
 ```
 
 <br>
 Çıktı:
 
 ```
-senol@pardus:~$ whereis -b ls
-ls: /usr/bin/ls
+senol@pardus:~$ which -a ls
+/usr/bin/ls
+/bin/ls
 ```
 
 ---
 
 <br>
-
-**ls** komutunun kılavuz -manual- dosyasının konumu için: için: 
-
-``` {.sh}
-whereis -m ls
-```
-
-
-```
-senol@pardus:~$ whereis -m ls
-ls: /usr/share/man/man1/ls.1.gz
-```
-
-
-
-<div style="color:red;"> 
-
-.
-
-</div>
-
----
 
 
 </br>
 
- [Yardım alma komutları -whatis-](./tr_komutlar-yardim-alma-komutlari-whatis-.md) << Önceki / Sonraki >> [Yardım alma komutları -which-](./tr_komutlar-yardim-alma-komutlari-which-.md)
+ [Yardım alma komutları -whereis-](./tr_komutlar-yardim-alma-komutlari-whereis-.md) << Önceki / Sonraki >> [Basit sistem komutları --](./tr_komutlar-yardim-alma-komutlari-which-.md)
 

@@ -156,5 +156,5 @@ Written by David MacKenzie.
 
 </br>
 
- [Yardım alma komutları -type-](../yardim-alma-komutlari/tr_komutlar-yardim-alma-komutlari-type-.md) << Önceki / Sonraki >> [Sistem & durum bilgisi komutları -clear-](./tr_komutlar-sistem-durum-bilgisi-komutlari-clear-.md)
+ [Yardım alma komutları -type-](../yardim-alma-komutlari/tr_komutlar-yardim-alma-komutlari-type-.md) << Önceki / Sonraki >> [Sistem & durum bilgisi komutları -uptime-](./tr_komutlar-sistem-durum-bilgisi-komutlari-uptime-.md)
 

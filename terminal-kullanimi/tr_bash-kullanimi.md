@@ -78,6 +78,8 @@ Aşağıdaki diğer kısayol tuş kombinasyonlarının işlevlerini inceleyebili
 |Alt + .|Son komut argümanı
 ||
 
+### **history**
+
 Daha önce kullandığımız komut listesini "**history**" komutu ile alabiliriz.
 
 ``` {.sh}
@@ -252,6 +254,16 @@ Benzer bir kullanım olan aşağıdaki yöntemle de karşılaşabilirsiniz.
 ``` {.sh}
 echo merhaba `whoami`   
 ```
+
+### **clear**
+</qbr>
+
+Terminal ekranını **clear** komutuyla temizler. Bu komut ekranı yukarı kaydırarak -**scroll**- komut girişi satırını terminal ekranında en üste alarak boş bir ekran sağlayacaktır. Elbette yukarı yönlü kaydırma ile geçmiş çıktılarınıza göz atabilirsiniz.
+
+``` {.sh}
+clear   
+```
+
 
 **Örnekler:**
 

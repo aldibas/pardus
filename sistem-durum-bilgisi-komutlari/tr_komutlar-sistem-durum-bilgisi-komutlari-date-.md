@@ -42,25 +42,26 @@ Komut seçenekleri : -**OPTIONS**- [-dfIRrsu --debug] [%a %A %b %B...]
 | -r, --reference=FILE| » | Dosyanın son düzenlenme zamanını gösterir. |
 |||
 
-| Seçenek | | Çıktı |
-|:--:|:--:|--|
-| +%a | » |  Tue / Sal|
-| +%A | » | Tuesday / Salı |
-| +%b | » | Feb / Şub |
-| +%B | » | February / Şubat |
-| +%c | » | Tue 14 Feb 2023 01:27:22 AM +03 -tarih ve saat- |
-| +%C | » | 20 -Yüzyıl / century- |
-| +%d | » | 14 -Ayın günü / century- |
-| +%D | » | 02/14/23 -Tarih- |
-| +%F | » | 2023-02-14 |
-| +%g | » | 23 -yıl- |
-| +%G | » | 2023 -yıl- |
-| +%H | » | 02 -saat- |
-| +%k | » | 3 -saat (0..23)- |
-| +%m | » | 02 -ay- |
-| +%p | » | AM/PM -ÖÖ/ÖS- |
-| +%R | » | 03:00 -zaman- |
-| .. | » | ... |
+| Seçenek | | Çıktı | Açıklama |
+|:--:|:--:|--|--|
+| +%a | » |  Tue / Sal| Gün|
+| +%A | » | Tuesday / Salı | Gün |
+| +%b | » | Feb / Şub | Ay |
+| +%B | » | February / Şubat | Ay |
+| +%c | » | Tue 14 Feb 2023 01:27:22 AM +03 | Tarih ve saat- |
+| +%C | » | 20 | Yüzyıl / century |
+| +%d | » | 14 | Ayın günü  |
+| +%D | » | 02/14/23 | Tarih |
+| +%F | » | 2023-02-14 | Tarih |
+| +%g | » | 23 | Yıl |
+| +%G | » | 2023 | Yıl |
+| +%H | » | 02 | Saat |
+| +%k | » | 3 | Saat (0..23) |
+| +%m | » | 02 | Ay |
+| +%p | » | AM/PM | ÖÖ/ÖS |
+| +%R | » | 03:00 | Zaman |
+| .. | » | ... | ...|
+
 
 
 
@@ -69,5 +70,5 @@ Komut seçenekleri : -**OPTIONS**- [-dfIRrsu --debug] [%a %A %b %B...]
 
 ---
 
- [Sistem&durum bilgisi komutları -uptime-](./tr_komutlar-sistem-durum-bilgisi-komutlari-uptime-.md) << Önceki / Sonraki >> [Sistem&durum bilgisi komutları -date-](./tr_komutlar-sistem-komutlari-date-.md)
+ [Sistem&durum bilgisi komutları -uptime-](./tr_komutlar-sistem-durum-bilgisi-komutlari-uptime-.md) << Önceki / Sonraki >> [Sistem&durum bilgisi komutları -hostname-](./tr_komutlar-sistem-komutlari-hostname-.md)
 

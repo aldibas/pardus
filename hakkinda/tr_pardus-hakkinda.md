@@ -40,5 +40,29 @@ Pardus ekibi ülkemizde yaygınlaştırılması, destekleyici bir ekosistemin ge
 Özgürlük içn Pardus!
 </p>
 
+Pardus versiyonunuz hakkında bilgi almak için **os-release** dosyasını görüntüleyebilirsiniz.
+
+``` {.sh}
+cat /etc/*release
+```
+
+``` {echo}
+PRETTY_NAME="Pardus GNU/Linux 21 (yirmibir)"
+NAME="Pardus GNU/Linux"
+VERSION_ID="21.2"
+VERSION="21.2 (yirmibir)"
+VERSION_CODENAME=yirmibir
+ID=pardus
+HOME_URL="https://www.pardus.org.tr/"
+SUPPORT_URL="https://forum.pardus.org.tr/"
+BUG_REPORT_URL="https://talep.pardus.org.tr/"
+ID_LIKE=debian
+PARDUS_CODENAME=yirmibir
+```
+
+
+
+
+
 
 Sonraki  >>  [Özgür Yazılım -freesoftware-](../hakkinda/tr_free-software.md)

@@ -1,6 +1,6 @@
 ## **Terminal & Kabuk -Shell- Komutları**
 
-### Sistem&Durum Bilgisi Komutları 
+### Sistem & Durum Bilgisi Komutları 
 
 #### **df -D**isk **F**ree- 
 
@@ -23,37 +23,38 @@ df
 
 ``` {echo}
 Filesystem     1K-blocks      Used Available Use% Mounted on
-udev            16291192         0  16291192   0% /dev
-tmpfs            3266588      1956   3264632   1% /run
 /dev/nvme0n1p1 191134604 160330388  21022252  89% /
 /dev/nvme1n1   491135216 249284088 216829364  54% /mnt/storage
+/dev/sdb1        2373328   2373328         0 100% /media/senol/Pardus
 ```
 
 </br>
 
->Bu çıktıda disk dosyalarımız / bölümlerimiz **"/dev"** altında olup diskin bağlı olduğu veri yoluna göre -yuva- / türe göre isimlendirilirler.
-Bu isimlendirmeler ile ilgili konuya **lsblk**, **blkid** gibi konularda değineceğiz.
+>Bu çıktıda disk dosyalarımız / bölümlerimiz **"/dev"** altında olup diskin bağlı olduğu veri yoluna göre -yuva- / türe göre isimlendirilirler. Bu isimlendirmelere **lsblk**, **blkid** gibi konularda değineceğiz.
+
+Yukarıdaki çıktıda sütunlar şu şelikdedir.
+<br>
+|||||||
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|Dosya Sistemi|Boyut|Kullanılan Alan| Kullanılabilir Alan| Kullanım Oranı|Bağlama noktası|
+||
+
 
 
 **Komutun dizilimi;**
 
 ```
-<command>  [OPTIONS] 
+<command>  [OPTIONS] [FILE]
 ```
 
-Komut seçenekleri : -**OPTIONS**- [-hbkmglt -s \<number> -c \<number>]
+Komut seçenekleri: -**OPTIONS**- [-TaklitBhHpxv --output=[FIELD_LIST] --sync ]
 
 | Seçenek | | Açıklama |
 |--|:--:|--|
-| -h, --human | » | Çıktıyı 3 basamakla halde **kolay okunablir** biçimde görüntüler. 16Gi, 100Mi  |
-| -b, --byte | » | Çıktı **byte** cinsinden görüntülenir. |
-| -k, --kibi | » | Çıktı **kilobayt -kB-** cinsinden görüntülenir. -Öntanımlı- |
-| -m, --mebi | » | Çıktı **megabayt -MB-** cinsinden görüntülenir. | 
-| -g, --gibi | » | Çıktı **gigabayt -GB-** cinsinden görüntülenir. |
-| -l, --lohi | » | Düşük ve yüksek bellek kullanımı hakkında detaylı bilgi verir. |
-| -t, --total | » | Çıktıda toplam -**total**- satırını görüntüler. |
-| -c, --count | » | Belirtilen sayı kadar güncel bellek durumu çıktısı verir. |
-| -s, --seconds | » | Çıktıyı belirtilen süre -saniye- aralığında vermeye devam eder. İptal: **Ctrl + C** |
+| -h, --human-readable | » | Kapasite verilerini birimlere dönüştürerek -**kolay okunablir**-  görüntüler. **16G, 20M, 10K**  |
+| -i, --inodes | » | Her bölümün inode sayısını görüntüler. |
+| -T, --type | » | Bölümlerin tipini görüntüler. |
+| --sycn | » | Önce senkronizasyon yapar. | 
 |||
 
 </br>
@@ -62,121 +63,77 @@ Komut seçenekleri : -**OPTIONS**- [-hbkmglt -s \<number> -c \<number>]
 
 </br>
 
+Kapasite verilerini kolay okunabilir görüntülemek için:
 
  ``` {.sh}
-free -h
+df -h
 ```
 
 Çıktı :
 
 ``` {echo}
-               total        used        free      shared  buff/cache   available
-Mem:            31Gi       2.5Gi        21Gi       752Mi       7.6Gi        27Gi
-Swap:          7.4Gi
+Filesystem      Size  Used Avail Use% Mounted on
+udev             16G     0   16G   0% /dev
+tmpfs           3.2G  2.0M  3.2G   1% /run
+/dev/nvme0n1p1  183G  153G   21G  89% /
+/dev/nvme1n1    469G  238G  207G  54% /mnt/storage
+/dev/nvme0n1p2  953M  152K  952M   1% /boot/efi
+/dev/sdb1       2.3G  2.3G     0 100% /media/senol/Pardus
 ```
 
-
 ---
+Dosya sistemleri için "**tür/type**" bilgisi ekleyerek görüntüleme:
 
  ``` {.sh}
-free -b
+df -T
 ```
 
 ``` {echo}
-               total        used        free      shared  buff/cache   available
-Mem:     33449861120  2646781952 22604738560   785178624  8198340608 29546471424
-Swap:     7999582208  
+Filesystem     Type      Size  Used Avail Use% Mounted on
+udev           devtmpfs   16G     0   16G   0% /dev
+tmpfs          tmpfs     3.2G  2.0M  3.2G   1% /run
+/dev/nvme0n1p1 ext4      183G  153G   20G  89% /
+/dev/nvme1n1   ext4      469G  238G  207G  54% /mnt/storage
+/dev/nvme0n1p2 vfat      953M  152K  952M   1% /boot/efi
+/dev/sdb1      iso9660   2.3G  2.3G     0 100% /media/senol/Pardus
 ```
-
 ---
+Dosya sistemlerini indeks sayısı "**-inode-**" ile görüntüleme:
 
-
-
-
- ``` {.sh}
-free -m
+``` {.sh}
+df -i
 ```
 
 Çıktı :
 
 ``` {echo}
-               total        used        free      shared  buff/cache   available
-Mem:           31900        2533       21533         763        7833       28154
-Swap:           7628           0        7628
-```
----
-
- ``` {.sh}
-free -g -t
-```
-
-Çıktı:
-
-```
-               total        used        free      shared  buff/cache   available
-Mem:              31           2          21           0           7          27
-Swap:              7           0           7
-Total:            38           2          28
-```
-
-
-
----
- ``` {.sh}
-free -h --lohi
-```
-Çıktı:
-
-``` {echo}
-               total        used        free      shared  buff/cache   available
-Mem:            31Gi       2.5Gi        21Gi       744Mi       7.6Gi        27Gi
-Low:            31Gi        10Gi        21Gi
-High:             0B          0B          0B
-Swap:          7.4Gi          0B       7.4Gi
-```
-
----
-
- ``` {.sh}
-free --count=3
-```
-
-Çıktı:
-
-``` {echo}
-               total        used        free      shared  buff/cache   available
-Mem:        32665880     2582960    22079032      760860     8003888    28861488
-Swap:        7812092           0     7812092
-
-               total        used        free      shared  buff/cache   available
-Mem:        32665880     2583472    22077624      761756     8004784    28860080
-Swap:        7812092           0     7812092
-
-               total        used        free      shared  buff/cache   available
-Mem:        32665880     2584136    22077196      761520     8004548    28859652
-Swap:        7812092           0     7812092
+Filesystem       Inodes  IUsed    IFree IUse% Mounted on
+udev            4072798    580  4072218    1% /dev
+tmpfs           4083235   1121  4082114    1% /run
+/dev/nvme0n1p1 12214272 868495 11345777    8% /
+/dev/nvme1n1   31260672    565 31260107    1% /mnt/storage
+/dev/nvme0n1p2        0      0        0     - /boot/efi
+/dev/sdb1             0      0        0     - /media/senol/Pardus
 ```
 
 ---
 
 </br>
 
->Bellek durumu bilgisini detaylı almak için **meminfo** dosyasını görüntüleyebiliriz.
+>Dosya sisteminizde bağlama noktalarını **/proc/mounts** iceriği ile  görüntüleyebilsiniz.
 
 </br>
 
 ``` {.sh}
-cat /proc/meminfo
+cat /proc/mounts
 ```
 
-
-</br>
-
+[](./md_images/Cinnamon-logo.svg-64.png)
 
 
 </br>
 
 ---
 
- [Sistem&durum bilgisi komutları -hostname-](./tr_komutlar-sistem-durum-bilgisi-komutlari-hostname-.md) << Önceki / Sonraki >> [Sistem&durum bilgisi komutları -free-](./tr_komutlar-sistem-komutlari-free-.md)
+ [Sistem & durum bilgisi komutları -free-](./tr_komutlar-sistem-durum-bilgisi-komutlari-free-.md) << Önceki / Sonraki >> [Sistem & durum bilgisi komutları -free-](./tr_komutlar-sistem-komutlari-free-.md)
 

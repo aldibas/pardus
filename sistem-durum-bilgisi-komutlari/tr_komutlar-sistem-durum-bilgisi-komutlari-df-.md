@@ -7,7 +7,7 @@
 
 </br>
 
-**df** komutu; dosya sisteminin disk alanı kullanımını görüntüler.
+**df** komutu; dosya sisteminde blok aygıtlarının durumunu görüntüler.
 
 </br>
 
@@ -31,7 +31,9 @@ tmpfs            3266588      1956   3264632   1% /run
 
 </br>
 
->Disk dosyalarımız **"/dev"** altında olup diskin bağlı olduğu  isimlendirilirler. 
+>Bu çıktıda disk dosyalarımız / bölümlerimiz **"/dev"** altında olup diskin bağlı olduğu veri yoluna göre -yuva- / türe göre isimlendirilirler.
+Bu isimlendirmeler ile ilgili konuya **lsblk**, **blkid** gibi konularda değineceğiz.
+
 
 **Komutun dizilimi;**
 

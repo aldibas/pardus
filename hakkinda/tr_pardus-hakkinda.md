@@ -60,9 +60,45 @@ ID_LIKE=debian
 PARDUS_CODENAME=yirmibir
 ```
 
+Bu bilgileri veren **screenfetch** komutunu da deneyebilirsiniz.
+
+**screenfetch** komutunu kurman için :
+
+``` {.sh}
+apt install screenfetch 
+```
 
 
+``` {.sh}
+screenfetch 
+```
+
+Çıktı:
+
+``` {echo}
+
+   .smNdy+-    `.:/osyyso+:.`    -+ydmNs.    senol@pardus
+  /Md- -/ymMdmNNdhso/::/oshdNNmdMmy/. :dM/   OS: Pardus 21.4 yirmibir
+  mN.     oMdyy- -y          `-dMo     .Nm   Kernel: x86_64 Linux 5.10.0-21-amd64
+  .mN+`  sMy hN+ -:             yMs  `+Nm.   Uptime: 5h 27m
+   `yMMddMs.dy `+`               sMddMMy`    Packages: Unknown
+     +MMMo  .`  .                 oMMM+      Shell: bash 5.1.4
+     `NM/    `````.`    `.`````    +MN`      Resolution: 5760x1080
+     yM+   `.-:yhomy    ymohy:-.`   +My      DE: Xfce
+     yM:          yo    oy          :My      WM: Xfwm4
+     +Ms         .N`    `N.      +h sM+      WM Theme: pardus-default
+     `MN      -   -::::::-   : :o:+`NM`      GTK Theme: pardus [GTK2]
+      yM/    sh   -dMMMMd-   ho  +y+My       Icon Theme: pardus
+      .dNhsohMh-//: /mm/ ://-yMyoshNd`       Font: Ubuntu 12
+        `-ommNMm+:/. oo ./:+mMNmmo:`         Disk: 506G / 832G (65%)
+       `/o+.-somNh- :yy: -hNmos-.+o/`        CPU: Intel Core i7-10750H @ 12x 5GHz [49.0°C]
+      ./` .s/`s+sMdd+``+ddMs+s`/s. `/.       GPU: Quadro P620
+          : -y.  -hNmddmNy.  .y- :           RAM: 5396MiB / 31900MiB
+           -+       `..`       +-           
 
 
+```
+
+</br>
 
 Sonraki  >>  [Özgür Yazılım -freesoftware-](../hakkinda/tr_free-software.md)

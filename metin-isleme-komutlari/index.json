@@ -1,0 +1,59 @@
+{
+    "scenario": {
+        "steps": [
+            {
+                "text": "tr_komutlar-metin-isleme-komutlari-cat-.md",
+                "verify":"verify1.json"
+            },
+            {
+                "text": "tr_komutlar-metin-isleme-komutlari-more-.md",
+                "verify":"verify1.json"
+            },
+            {
+                "text": "tr_komutlar-metin-isleme-komutlari-less-.md",
+                "verify":"verify1.json"
+            },
+            {
+                "text": "tr_komutlar-metin-isleme-komutlari-head-.md",
+                "verify":"verify1.json"
+            },
+            {
+                "text": "tr_komutlar-metin-isleme-komutlari-tail-.md",
+                "verify":"verify1.json"
+            },
+            {
+                "text": "tr_komutlar-metin-isleme-komutlari-cut-.md",
+                "verify":"verify1.json"
+            },
+            {
+                "text": "tr_komutlar-metin-isleme-komutlari-grep-.md",
+                "verify":"verify1.json"
+            },
+            {
+                "text": "tr_komutlar-metin-isleme-komutlari-awk-.md",
+                "verify":"verify1.json"
+            }
+            {
+                "text": "tr_komutlar-metin-isleme-komutlari-sed-.md",
+                "verify":"verify1.json"
+            }
+            {
+                "text": "tr_komutlar-metin-isleme-komutlari-tr-.md",
+                "verify":"verify1.json"
+            }
+        ],
+        "intro": {
+            "text": "intro.md"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "video": {}
+    },
+    "environment": {
+        "uilayout": "editor-terminal"
+    },
+    "backend": {
+        "imageid": "alpine"
+    }
+}

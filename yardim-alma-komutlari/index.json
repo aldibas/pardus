@@ -1,0 +1,39 @@
+{
+    "scenario": {
+        "steps": [
+            {
+                "text": "tr_komutlar-yardim-alma-komutlari-man-.md",
+                "verify":"verify1.json"
+            },
+            {
+                "text": "tr_komutlar-yardim-alma-komutlari-whatis-.md",
+                "verify":"verify1.json"
+            },
+            {
+                "text": "tr_komutlar-yardim-alma-komutlari-whereis-.md",
+                "verify":"verify1.json"
+            },
+            {
+                "text": "tr_komutlar-yardim-alma-komutlari-which-.md",
+                "verify":"verify1.json"
+            },
+            {
+                "text": "tr_komutlar-yardim-alma-komutlari-type-.md",
+                "verify":"verify1.json"
+            }
+        ],
+        "intro": {
+            "text": "intro.md"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "video": {}
+    },
+    "environment": {
+        "uilayout": "editor-terminal"
+    },
+    "backend": {
+        "imageid": "alpine"
+    }
+}

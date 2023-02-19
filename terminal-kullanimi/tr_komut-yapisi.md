@@ -35,7 +35,7 @@ Seçenekler -**option**- ise komutların ana işlevlerinin ekstra özellikleriyl
 
 >**Opsiyonlar** ise genellikle, tek karakter kısaca ya da açık hali ile kullanılabilirler. Tek karakter ile gösterimlerde “**-**” işareti ile kullanılırken açık hali ile kullanırken “**--**” karakterleri ile yazılır. Çoğu durumlarda opsiyonu kullandığımız noktada bir yol tanımı -dosya/dizin adı- beklenmiyorsa "**-**" ya da "**--**" işaretleri kullanılmayabilir. 
 
-Bu kısmı örneklemek gerekirse "**.**" ile başlalay dosyaları listelemek için aşağıdaki her iki yazım şekli de kullanılabilir.
+Bu kısmı örneklemek gerekirse "**.**" ile başlalayan dosyaları listelemek için aşağıdaki her iki yazım şekli de kullanılabilir.
 
 ``` {.sh}
 ls -a

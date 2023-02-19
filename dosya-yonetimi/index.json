@@ -2,8 +2,12 @@
     "scenario": {
         "steps": [
             {
-                "text": "tr_unix-gnu-linux-dosya-sistemi-yapisi.md"
-		"verify":"verify1.json"
+                "text": "tr_dosya-yonetimi-listeleme-ls-.md"
+		"verify":"tr_dosya-yonetimi-listeleme-ls-verify.json"
+            },
+            {
+                "text": "tr_dosya-yonetimi-erisim-izinleri"
+		"verify":"tr_dosya-yonetimi-erisim-izinleri-verify.json"
             }
         ],
         "intro": {

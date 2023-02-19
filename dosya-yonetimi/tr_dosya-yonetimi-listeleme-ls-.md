@@ -56,11 +56,11 @@ Komut seçenekleri : -**OPTIONS**- [-aAbBcCdDfFgGhHiIklLmnNopqQrRsStTuUvwxXz1]
 **ls** çıktı Örnekleri:
 
 
-
 ``` {.sh}
-ls
+ls --all
 ```
 
+"**.**" ile başlayan dosyalar da listeye dahil ediliyor.
 
 ``` {echo}
 

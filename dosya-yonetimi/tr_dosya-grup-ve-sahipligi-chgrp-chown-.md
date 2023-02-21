@@ -58,114 +58,98 @@ Bu listedeki "pardus.txt" dosyasının sahipliğini değiştirelim.
 
 Konuyu örneklerle inceleyelim:
 
-"GNU-Linux" isminde bir dosya oluşturalım.
+
 
 ``` {.sh}
-touch GNU-Linux
+
 ```
 
-Bu dosyanın izinlerini görelim:
+
 
 ``` {.sh}
-ls -l GNU-Linux
+
 ``` 
 
 Çıktı:
 
 ``` {echo}
--rw-r--r-- 1 senol senol 0 Feb 21 00:29 GNU-Linux
 ```
 
-Çıktıdan da "**rw-r--r--**" anlaşılacağı üzere bu dosyayı;
-
-* Sahibi : sadece **okuyabilir** ve **yazabilir** ( r w - )
-* Grup üyeleri : sadece    **okuyabilir** ( r - - )
-* Diğer kullanıcılar : sadece  **okuyabilir** ( r - - )
 
 
->Dosyanın izinlerinin sekilik -**octal**- tabanda karşılığı **644** tür. Varsayılan -öntanımlı- izinler ve **UMASK** konusunu hatırlayalım. ( 666 - 022 = 644 )
 
 
-Şimdi bu erişim izinlerini nasıl belirlediğimize göz atalım.
 
-GNU-Linux dosyasının mevcut izinlerine tüm kullanıcılar için çalıştırma izni ekleyelim.
 
 
 
 
 
 ``` {.sh}
-chmod +x GNU-Linux
+
 ``` 
 
-Dosyanın izinlerinin son hali:
+
 
 ``` {echo}
--rwxr-xr-x 1 senol senol 0 Feb 21 00:29 GNU-Linux
+
 ```
 
 <div style="color:red">
 
->Bir dosyaya tüm kullanıcılar için **çalıştırma(x)** ve **yazma(w)** yetkilerini vermek **kesinlikle yapılmaması** gereken bir işlemdir.
 
 </div>
 
 ---
 
-GNU-Linux dosyasının mevcut izinlerinden diğer kullanıcılar -**other users**- için **okuma(r)** ve **çalıştırma(x)** iznini kaldıralım.
+
 
 ``` {.sh}
-chmod o-wx GNU-Linux
+
 ``` 
 
 **ls -l** ile alınan çıktı:
 
 ``` {echo}
--rwxr-xr-- 1 senol senol 0 Feb 21 00:29 GNU-Linux
+
 ```
 
->Bu örnekte "**-**" karakteri ile mevcut haklardan belirtilen izinler **çıkartılır.** 
+
 
 ---
 
-GNU-Linux dosyasının izinlerini **sahibi(u)** ve **grubu(g)** için "**okuyabilir**" ve "**yazabilir**" olarak değiştirelim.
+
 
 ``` {.sh}
-chmod ug=rw GNU-Linux
+
 ``` 
 
 Sonuç:
 
 ``` {echo}
--rw-rw-r-- 1 senol senol 0 Feb 21 00:29 GNU-Linux
+
 ```
 
->Bu örnekte "**=**" karakteri ile mevcut izinlere ilave ya da bu izinlerden eksiltme yapıpmayıp verilecek izinlerin "**son hali**" belirlenir.
+
 
 ---
 
-GNU-Linux dosyasının izinlerini,
-* sahibi için **okuyabilir**, **yazabilir** ve **çalıştırabilir** (111),
-* grubundaki kullanıcılar için **yazabilir** ve **okuyabilir** (110),
-* diğer tüm kullanıcılar için sadece "**okuyabilir**"(100) 
-
-olacak şekilde sekizlik -**octal**- tabanda belirteyak ayarlayalım.
 
 
 ``` {.sh}
-chmod 764 GNU-Linux
+
 ``` 
 
 Çıktı **-c**:
 
 ``` {echo}
-mode of 'GNU-Linux' changed from 0664 (rw-rw-r--) to 0764 (rwxrw-r--)
+(rwxrw-r--)
 ```
 
 Sonuç:
 
 ``` {echo}
--rwxrw-r-- 1 senol senol 0 Feb 21 00:29 GNU-Linux
+
 ```
 
 >bu örnekte dosyanın mevcut izinleri değiştiği için "**-c**" parametresi işlem sonunda ekrana bilgi basmaktadır. Benzer bir çıktıyı "**-v**" seçeneği de sağlayacaktır. Ancak "**-v --verbose**", buradaki "**-c** seçeneğinden farklı olarak her durumda yapılan işlemle ilgili bilgi basar. -**stdout**-  
@@ -173,15 +157,14 @@ Sonuç:
 Çıktı **-v**:
 
 ``` {echo}
-mode of 'GNU-Linux' retained as 0764 (rwxrw-r--)
+
 ```
 
 ---
-Örneklerimizi **UMASK** değerini değiştirerek çeşitlendirelim. 
-Mevcut UMASK değeri:
+
 
 ``` {.sh}
-umask
+
 ``` 
 
 Çıktı:

@@ -2,13 +2,13 @@
 
 ## Dosya Yönetimi
 
-### **Dosya Erişim İzinleri -chmod-** 
+### **Dosya Gurubu ve Sahipliğini Belirleme -chgrp & chown-** 
 
+</br>
 
-Linux yetkilendirme modeli, UNIX ve BSD’den alınmıştır.
+#### chown (CHange OWNer)
 
-
-**chmod** -change mode- komutu dosya ve dizinlerin erişim izinlerini belirlememiz sağlar. Bu işlemi **octal** -sekizlik- değerler ya da  semboller (**r, w, x, t, s**) ile belirterek yapabiliriz.
+**chown** -change owner- komutu dosya ve dizinlerin sahiplik ve grubunu belirlememizi sağlar. 
 
 
 
@@ -17,13 +17,13 @@ Linux yetkilendirme modeli, UNIX ve BSD’den alınmıştır.
 **Komutun dizilimi;**
 
 
-```
-chmod [OPTIONS] [MODE] [FILE]...
+``` {echo}
+chown [OPTIONS] [OWNER][:[GROUP]]  FILE...
 ```
 
 <br>
 
-Seçenekler: -**OPTIONS**- [-cfRv] 
+Seçenekler: -**OPTIONS**- [-cfRvHLP --from= --help ] 
 
 | Seçenek | | Açıklama |
 |--|:--:|--|
@@ -35,29 +35,21 @@ Seçenekler: -**OPTIONS**- [-cfRv]
 
 </br>
 
-**MODEs**
+Konuyu bir çıktı üzerinden alalım :
 
-"**rwxr-xr-x**" gösterimini sahiplik -User-, grup -Group- ve diğer -Others- olarak gruplamıştık. Bunların tamamını birden ifade etmek için "**a**" -all users- sembolünü de ekleyebiliriz.
-
-* **u** : User
-* **g** : Group 
-* **o** : Others 
-* **a** : All users
+Bir önceki konuda oluşturduğumuz doslayarın listesini "**ls -l**" komutu ile alalım.
 
 
-</br>
+``` {echo}
+drwxrwxr-x 2 senol senol 4096 Feb 21 11:11 debian
+-rwxrw-r-- 1 senol senol    0 Feb 21 00:29 GNU-Linux
+-rw-rw-r-- 1 senol senol    0 Feb 21 11:11 pardus.txt
+```
 
-Permissions / izinler: -MODEs- [ ugoa ] [ +-= ] [ permissions : rwx ] [ tsTS ]
+Bu çıktıdaki 3. ve 4. alanların sırasıyla dosyanın adı ve grubu bilgisi olduğundan bahsetmiştik.
 
-Permissions / izinler: -MODEs- [ octal ]
+Bu listedeki "pardus.txt" dosyasının sahipliğini değiştirelim. 
 
-
-
-* **r** : Read -okuma-
-* **w** : Write -yazma- 
-* **x** : eXecute -çalıştırma- 
-* **s** : SUID -Set User ID- / SGID -Set Group ID-
-* **t** : Sticky Bit
 
 
 

@@ -235,18 +235,23 @@ Fakat gerçekte günlük hayatta çok fazla kullanılmayan 4. Bir bit daha vard�
 
 SUID (Set User ID) biti, bir dosyayı çalıştıran kullanıcının yerine dosya sahibinin kullanıcı kimliğini kullanarak dosyayı çalıştırmayı sağlar.
 
-Örneğin, "**passwd**" komutu, kullanıcıların parolalarını değiştirmelerini sağlar. Ancak, parolalar "**shadow**" dosyasında şifrelenmiş şekilde saklanır ve bu dosya yetkili kullanıcı tarafından görüntülenebilir ve değiştirilebilir. İşte **passwd** komutundaki **SUID** biti bize shadow dosyasına yazma izni sağlar.
+Örneğin, "**passwd**" komutu, kullanıcıların parolalarını değiştirmelerini sağlar. Ancak, parolalar "**shadow**" dosyasında şifrelenmiş şekilde saklanır ve bu dosya yetkili kullanıcı tarafından görüntülenebilir ve değiştirilebilir. İşte **passwd** komutundaki **SUID** biti bize shadow dosyasına yazma izni sağlar. 
+
+Bu iki dosyanın izinleri:
 
 ``` {.sh}
-ls -l /usr/bin/passwd
+ls -l /usr/bin/passwd /etc/shadow
 ```
 
-Çıktıdaki "**s**" karakterine dikkat edin. 
+
 
 ``` {echo}
--rwsr-xr-x 1 root root 63960 Feb  7  2020 /usr/bin/passwd
+-rw-r----- 1 root shadow  1746 Feb  7 16:00 /etc/shadow
+-rwsr-xr-x 1 root root   63960 Feb  7  2020 /usr/bin/passwd
 ```
 
+Çıktıdaki karakterlere dikkat edelim. Bu karakter "**s**" ise SUID bit aktif, "**S**" ise pasif anlamına gelecektir.
+  
 
 </br>
 

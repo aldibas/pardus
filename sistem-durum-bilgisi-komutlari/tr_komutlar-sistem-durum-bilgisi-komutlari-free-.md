@@ -173,5 +173,5 @@ cat /proc/meminfo
 
 ---
 
- [Sistem&durum bilgisi komutları -hostname-](./tr_komutlar-sistem-durum-bilgisi-komutlari-hostname-.md) << Önceki / Sonraki >> [Sistem&durum bilgisi komutları -free-](./tr_komutlar-sistem-komutlari-free-.md)
+ [Sistem & durum bilgisi komutları -hostname-](./tr_komutlar-sistem-durum-bilgisi-komutlari-hostname-.md) << Önceki / Sonraki >> [Sistem & durum bilgisi komutları -free-](./tr_komutlar-sistem-komutlari-df-.md)
 

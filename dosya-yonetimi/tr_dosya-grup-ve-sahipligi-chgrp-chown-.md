@@ -6,7 +6,9 @@
 
 </br>
 
-#### chown (CHange OWNer)
+#### **chown (CHange OWNer)**
+
+</br>
 
 **chown** -change owner- komutu dosya ve dizinlerin sahiplik ve grubunu belirlememizi sağlar. 
 
@@ -176,7 +178,7 @@ Seçenekler: -**OPTIONS**- [-cfRvHLP --help --version ]
 
 </br>
 
----
+
 
 Konuyu tekrar bir çıktı üzerinden alalım :
 

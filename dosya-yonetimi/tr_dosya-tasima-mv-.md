@@ -229,5 +229,5 @@ Bu örnekte hedefte var olan "**GNU-Linux**" dosyasının ismi belirtilen **son-
 </br>
 
 ---
- [Dosya Yönetimi / Dosya Kopyalama -cp- ](tr_dosya-kopyalama-cp-.md) << Önceki / Sonraki >> [Dosya Yönetimi -Dosya/Dizin Silme- -rm- / -rmdir-](./tr_dosya-silme-rm-rmdir-.md)
+ [Dosya Yönetimi / Dosya Kopyalama -cp- ](tr_dosya-kopyalama-cp-.md) << Önceki / Sonraki >> [Dosya Yönetimi -Dosya/Dizin Silme- -rm- / -rmdir-](./tr_dosya-ve-dizin-silme-rm-rmdir-.md)
 

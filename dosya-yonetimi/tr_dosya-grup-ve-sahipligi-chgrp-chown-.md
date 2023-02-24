@@ -56,7 +56,7 @@ adduser pardus
 ```
 </br>
 
->Kullanıcı ekleme yetki gerektiren bir işlem olduğundan kendi bilgisayarınızda uygularken "**su**" komutu ile "**root**" kullanıcısına geçebilir ya da komutu başına "**sudo**" yazarak (**sudo adduser pardus**) kullanabilirsiniz.
+>Kullanıcı ekleme/kaldırma gibi işlemler yetki gerektirdiğinen kullanıcı yönetimi ile  ilgili işlemlerde genelikle "**su**" komutu ile "**root**" kullanıcısına geçmeniz ya da komutu başına "**sudo**" yazarak (**sudo adduser pardus**) çalıştırmanız gerekir. Buradaki Pardus docker imajında ise yetkili -**root**- olarak oturum açmış durumdasınız.
 
 Oluşturulan kullanıcıyı görmek için ana dizinde -**kök"/"**- bulunan "**etc**" dizini içerisindeki kullanıcı dosyasının -"**passwd**"- içeriğini "**cat**" komutu ile görüntüleyebiliriz.
 

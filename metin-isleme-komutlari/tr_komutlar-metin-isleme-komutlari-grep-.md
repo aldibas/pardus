@@ -204,6 +204,18 @@ grep -r '\shost\s' /etc/
 
 </br>
 
+
+Süreçleri öldürmek, sonlandırmak, yeniden başlatmak gibi eylemler için `kill` komutunu kullanabiliriz. Şimdi yukarıdaki açıklamayı `kill` ve `grep` komutları ile örnekleyelim...
+</br>
+
+```sh
+pgrep firefox
+```
+
+Firefox uygulaması çalışyor ise bu uygulamanın süreç numarasını -**process id (PID)**- verir.
+
+
+
 #### **ngrep** -Network grep-
 </br>
 

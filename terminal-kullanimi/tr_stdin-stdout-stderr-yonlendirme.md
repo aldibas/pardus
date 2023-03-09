@@ -113,11 +113,11 @@ Disk bölümlerimizi **disk** dosyasına yazalım:
 lsblk > disk
 ```
 
-"**devices**" ve "**disk**" dosyalarını "**system-info**" dosyasına birleştirelim:
+"**aygit**" ve "**disk**" dosyalarını "**system-info**" dosyasına birleştirelim:
 
 
 ``` {.sh}
-cat devices disk > system-info
+cat aygit disk > system-info
 ```
  "**system-info**" dosyasını görüntüleyelim:
 
@@ -170,7 +170,15 @@ Bu hata çıktılarını log dosyalarında tutmak gereksiz ise oluşan bu hata �
 
 >Uygulama hata çıktılarını **kök** "-/-" dizinindeki "**dev**" altında bulunan "**null**" aygıt dosyasına yönlendirebiliriz.
 
+Bu konu örneği için "**fping**" paketini kuralım...
+
+
+```{sh}
+apt install fping 
 ```
+
+
+```{sh}
 fping -a -g 192.168.1.0/24 
 ```
 

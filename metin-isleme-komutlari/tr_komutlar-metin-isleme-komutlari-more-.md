@@ -66,7 +66,7 @@ more --lines=5 /etc/passwd
 more +2 /etc/passwd
 ```
 
->**more** komutu çıktı ekranında  **/** karakterinden sonra desen -patern- girilerek düzenli ifadeye -regex- göre arama yapılabilir. -**/\<patern>**- 
+>**more** komutu çıktı ekranında  **/** karakterinden sonra desen -pattern- girilerek düzenli ifadeye -regex- göre arama yapılabilir. -**/\<pattern>**- 
 
 >**more** komutu çıktı ekranında  **?** ile kullanılabilecek tuş ve işlevleri listelenebilir. Bu işlevler:
 
@@ -76,7 +76,7 @@ more +2 /etc/passwd
 | q / Q | » | Çıkış |
 | \<return> | » | Sonraki satır. |
 | \<space> | » | Sonraki sayfa. |
-| /\<patern> | » | Belirtilen deseni -**patern**- arar. |
+| /\<patern> | » | Belirtilen deseni -**pattern**- arar. |
 | !\<command> | » | Belirtilen kabuk komutunun çıktısını görüntüler. |
 | :n | » | Sonraki dosyaya geçer. -**n**ext- |
 | :p | » | Önceki dosyaya geçer. -**p**revious- |

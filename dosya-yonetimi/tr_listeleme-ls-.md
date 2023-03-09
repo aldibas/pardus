@@ -154,7 +154,7 @@ Alt dizinlerin içerikleri ile listeleme:
 Öncelikle Pardus dizinine bir dosya kopyalayalım.
 
 ``` {.sh}
-cp 
+cp dosya Pardus
 ```
 
 
@@ -333,7 +333,7 @@ Erişim izinlerini belirleme hakkında detaylı bilgilere "**chmod**, **umask**"
 ls > dosya-listesi
 ```
 
-``` {echo}
+``` {.sh}
 ls -m ~
 ```
 

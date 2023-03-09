@@ -209,10 +209,10 @@ Tam dizin hirerarşisi için "**Linux Dosya Sistemi" konusunundaki görseli ince
 
 </br>
 
->Komutların kullanımında birden fazla dosyayı ifade etmek için dosya isimlerindeki benzerlikler dikkate alınarak joker karakterler **\*, ?** ** ve **.** ile patern -desen- uygulanabilir. 
+>Komutların kullanımında birden fazla dosyayı ifade etmek için dosya isimlerindeki benzerlikler dikkate alınarak joker karakterler **\*, ?** ** ve **.** ile desen -pattern- uygulanabilir. 
 
 
 </br>
 
- [Bash kabuğu değişkenleri](./tr_bash-kabugu-degiskenleri.md) << Önceki / Sonraki >> [Dosya adları ve patern uygulama](./tr_dosya-adlari.md)
+ [Bash kabuğu değişkenleri](./tr_bash-kabugu-degiskenleri.md) << Önceki / Sonraki >> [Dosya adları ve desen -pattern- uygulama](./tr_dosya-adlari.md)
 

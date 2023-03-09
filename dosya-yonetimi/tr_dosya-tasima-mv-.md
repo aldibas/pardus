@@ -166,10 +166,6 @@ tree
 touch GNU-Linux
 ```
 
-``` {.sh}
-touch GNU-Linux
-```
-
 Listeleme için "**ls**" ya da "**tree**"
 
 ``` {.sh}

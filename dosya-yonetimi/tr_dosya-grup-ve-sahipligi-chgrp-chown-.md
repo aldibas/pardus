@@ -197,13 +197,6 @@ chgrp pardus pardus.txt
 ```
 </br>
 
->Dosya grubunu değiştirme  yetki gerektiren bir işlem olduğundan kendi bilgisayarınızda uygularken "**su**" komutu ile "**root**" kullanıcısına geçebilir ya da komutu başına "**sudo**" yazarak (**sudo chgrp pardus pardus.txt**) kullanabilirsiniz.
-
-Değişikliği görmek için:
-
-``` {.sh}
-ls -l
-``` 
 
 >Dosya sahipliği değiştirme  yetki gerektiren bir işlem olduğundan kendi bilgisayarınızda uygularken "**su**" komutu ile "**root**" kullanıcısına geçebilir ya da komutu başına "**sudo**" yazarak (**sudo chown pardus pardus.txt**) kullanabilirsiniz.
 

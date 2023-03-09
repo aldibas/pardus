@@ -104,14 +104,14 @@ file: ASCII text
 
 <br>
 
-Bir komutun kullanım biçimini incelerken yol tanımından -path- bahsetmiştik. Bu anlatımlarda bir konumdaki bir kaynak dosya üzerinde örnekler yapmıştık. Birden fazla dosya ya da konum üzerinde işlem gerçekleştirmek için dosya/dizin adlarında desen -patern- uygulayabiliriz.
+Bir komutun kullanım biçimini incelerken yol tanımından -path- bahsetmiştik. Bu anlatımlarda bir konumdaki bir kaynak dosya üzerinde örnekler yapmıştık. Birden fazla dosya ya da konum üzerinde işlem gerçekleştirmek için dosya/dizin adlarında desen -pattern- uygulayabiliriz.
 
 
 
-### Patern Uygulama
+### Desen -Pattern- Uygulama 
 </br>
 
->Komutların kullanımında birden fazla dosyayı ifade etmek için dosya isimlerindeki benzerlikler dikkate alınarak joker karakterler **\*, ?** ** ve **.** ile patern -desen- uygulanabilir. 
+>Komutların kullanımında birden fazla dosyayı ifade etmek için dosya isimlerindeki benzerlikler dikkate alınarak joker karakterler **\*, ?** ** ve **.** ile desen -pattern- uygulanabilir. 
 
 
 <br>
@@ -295,7 +295,7 @@ ls
 ```
 
  
- saat:dakika_gün-ay-yıl.png formatında isimlerden oluşan bir fotoğraf albümünde 2013 yılının 10-15 Ağustos aralığında saat akşam 5 ile 6 arasında oluşmuş/çekilmiş dosyaları gösteren paterni -deseni- düşünün.
+ saat:dakika_gün-ay-yıl.png formatında isimlerden oluşan bir fotoğraf albümünde 2013 yılının 10-15 Ağustos aralığında saat akşam 5 ile 6 arasında oluşmuş/çekilmiş dosyaları gösteren deseni -pattern- düşünün.
  Örnek dosya adı : 05:09_30-08-2020.jpg
 
 

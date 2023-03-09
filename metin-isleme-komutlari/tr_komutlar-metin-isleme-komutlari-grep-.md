@@ -212,8 +212,28 @@ Süreçleri öldürmek, sonlandırmak, yeniden başlatmak gibi eylemler için `k
 pgrep firefox
 ```
 
-Firefox uygulaması çalışyor ise bu uygulamanın süreç numarasını -**process id (PID)**- verir.
+Bu örnek,  Firefox uygulaması çalışyor ise bu uygulamanın süreç numarasını -**process id (PID)**- verir.
 
+```sh
+kill -9 <firefox-PID>
+```
+
+Buradaki `kill` komutu süreç numarası girilen Firefox uygulamasını öldürür. Buradaki kullanımı bir betik içerisinde kullanıyorsak Firefox uygulamasının süreç numarasını -**PID**- bir değişkende tutmalıyız. Buna gerek kalmaması için bu iki örneği birleştirelim...
+
+
+```sh
+kill -9 $(pgrep firefox)
+```
+
+Bir sürecin süreç numarasını almak için `grep` komutu yerine daha kolay olan `pgrep` komutunu kullanabiliyorsak neden `kill` komutu yerine `pkill` komutunu kullanmayalım?
+
+```sh
+pkill firefox
+```
+
+Bu örnekten anlaşılacağı üzere, "**p**", "**n**", "**x**", "**z**" gibi karakterin komut çeşitliliği açısından bir anlamı olabileceğini unutmamakta fayda var.
+
+</br>
 
 
 #### **ngrep** -Network grep-

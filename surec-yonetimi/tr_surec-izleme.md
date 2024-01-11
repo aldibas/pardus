@@ -164,7 +164,7 @@ Bir komutu işlemci önceliğini değiştirmiş olarak başlatır.
 
 **nice -n öncelik komut**
 
-Öncelik -20 ile 19 arasında bir tamsayıdır. -20 en yüksek öncelik demek oluyorken 19 en düşük öncelik demektir. Komut verilmez ise mevcut öncelik değerini ekrana basar. Öncelik değeri bir değer belirtilmezse öntanımlı olarak 10 artırılır.
+Öncelik -20 ile 19 arasında bir tam sayıdır. -20 en yüksek öncelik demek oluyorken 19 en düşük öncelik demektir. Komut verilmez ise mevcut öncelik değerini ekrana basar. Öncelik değeri bir değer belirtilmezse öntanımlı olarak 10 artırılır.
 
 ``` {.sh}
 nice

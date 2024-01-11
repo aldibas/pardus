@@ -50,20 +50,20 @@ groupadd sistemci
 komutu ile **sistemci** siminde bir gurup oluşturalım.
 
 ``` {.sh}
-usermod -G sistemci cuneyt
+usermod -aG sistemci kaan
 ```
 
-komutu ile **cuneyt** kullanıcısını **sistemci** gurubuna dahil edelim.
+komutu ile **kaan** kullanıcısını **sistemci** gurubuna dahil edelim.
 
 
 ``` {.sh}
-id cuneyt
+id kaan
 ```
-komutu ile **cuneyt** kullanıcısının dahil olduğu gurupları görelim:
+komutu ile **kaan** kullanıcısının dahil olduğu gurupları görelim:
 
 Komut çıktısı:
 ``` {.echo}
-uid=1000(cuneyt) gid=1000(cuneyt) groups=1000(cuneyt),1001(sistemci)
+uid=1000(kaan) gid=1000(kaan) groups=1000(kaan),1001(sistemci)
 ```
 
 
@@ -107,7 +107,7 @@ Done.
 
 Aşağıdaki komut ile **senol** kullanıcısını **muhasebe** ve **bilgiislem** gurubuna dahil edelim.
 ``` {.sh}
-usermod -G muhasebe,bilgiislem senol
+usermod -aG muhasebe,bilgiislem senol
 ```
 
 ``` {.sh}

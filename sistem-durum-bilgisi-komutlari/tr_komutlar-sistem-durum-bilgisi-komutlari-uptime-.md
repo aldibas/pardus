@@ -14,7 +14,7 @@
 * Saat, 
 * Sistemin ne kadar süredir ayakta olduğu/çalıştığı -**uptime**-,
 * Oturum açmış kullanıcı sayısı -**online user**-,
-* Sırasıyla, son **1, 5,** ve **15** dakikalarındaki sistem yük ortlaması</br>
+* Sırasıyla, son **1, 5** ve **15** dakikalarındaki sistem yük ortalaması</br>
 
 bilgilerini görüntüler.
 

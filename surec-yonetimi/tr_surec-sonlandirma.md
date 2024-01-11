@@ -141,7 +141,7 @@ kaan@pardus:~$ kill %2
 
 ### Kill, killall
 
-Komut satırından ellen süreçlere sinyal göndermek için kill komutu kullanılır.
+Süreçlere sinyal göndermek için kill komutu kullanılır.
 
 Aşağıdaki komut 1120 PID numaralı sürece 9 numaralı (SIGKILL) sinyali gönderir. Dolaysıyla süreci öldürür.
 
@@ -160,7 +160,7 @@ kill -1 1531
 killall -HUP httpd
 ```
 
-killall komutu PID numarasına bakmadan ismiyle sürece sinyal göndermek için kullanılır.
+killall komutu PID numarasına bakmadan süreç ismi, kullanıcı, protokol gibi opsiyonlar ile sürece sinyal göndermek için kullanılabilir.
 
 ### Pkill, pgrep
 

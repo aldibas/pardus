@@ -7,7 +7,7 @@
 
 </br>
 
-**free** komutu; bellek -**RAM**- durum ve takas alanı -**swap**- ile ilgili bilfi verir.
+**free** komutu; bellek -**RAM**- durum ve takas alanı -**swap**- ile ilgili bilgi verir.
 
 </br>
 

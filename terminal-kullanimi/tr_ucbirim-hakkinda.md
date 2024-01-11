@@ -5,7 +5,7 @@
 Pardus işletim sisteminde işlemlerinizi grafik arayüzleri ile gerçekleştirebileceğiniz gibi komut istemcisini (uçbirim) kullanarak gerçekleştirebilirsiniz. Bu ifadeden de anlaşılacağı üzere Uçbirim, diğer bir adıyla konsol -console-, bir komut satırı aracıdır.
 
 Çoğu Pencere yöneticisinde **Ctrl+Alt+T** klavye kısayolu ile başlatılabilir. Bu durumda aktif kullanıcı hesabında varsayılan olarak ayarlanmış olan giriş kabuğunda -shell- yandaki gibi oturum açılmış olacaktır.
-Sizin oturumunda daha önce bahsettipimiz sh, bash, zsh, tcsh gibi kabuklardan hangi kabugun varsayılan olarak geldiğini görmek çin aşağıdaki komutu girin.</br>
+Sizin oturumunuzda daha önce bahsettiğimiz sh, bash, zsh, tcsh gibi kabuklardan hangi kabugun varsayılan olarak geldiğini görmek çin aşağıdaki komutu girin.</br>
 ``` {.sh}
 echo $0
 ```

@@ -31,7 +31,7 @@ grep aranacak-kelime/desen file-name
 
 
 ```
-GREP [OPTIONS] PATTERNS [FILE] [FILE] ...
+grep [OPTIONS] PATTERNS [FILE] [FILE] ...
 ```
 
 <br>
@@ -243,11 +243,38 @@ Ngrep komutu, ağ trafiğini dinleyerek belirli bir deseni filtrelemek için kul
 
 
 
+**Komutun dizilimi;**
+
+
+```
+ngrep [OPTIONS] PATTERNS [CAPTURE] 
+```
+
+<br>
+
+Komut seçenekleri : -**OPTIONS**- [-TeRtiphNXVwqvxlGsSIOndA type] 
+
+
+
+| Seçenek | | Açıklama |
+|--|:--:|--|
+| -q, --quiet | » | Sessiz ol, Sadece paket başlıkları ve içerik -**payload**- bilgilerini basar. |
+| - | » |  |
+| - | » | |
+| - | » |  |
+
+
+
+
 **Komut dizilimi:**
 
 ```echo
 ngrep [seçenekler] pattern [capture]
 ```
+
+
+
+
 
 </br>
 Örnekler:

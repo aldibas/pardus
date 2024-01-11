@@ -1,6 +1,6 @@
 # Açık Kaynak -Open Source-
 
-<img align="right" width="20%" src="https://opensource.org/sites/default/files/public/osi_keyhole_300X300_90ppi_0.png"> 
+<img align="right" width="20%" src="https://do3z7e6uuakno.cloudfront.net/uploads/event/logo/1128612/a302bc555b006d2a46089a5f3873b453.png"> 
 
 **Açık Kaynak -Open Source-**, tıpkı özgür yazılımlar gibi kullanıcıya yazılımı kullanma, anlama, değiştirme ve dağıtma özgürlükleri sunan yazılımdır. Bu topluluk hareketi ise 3 Şubat 1998’de California'da düzenlenen bir strateji oturumunda doğmuştur. Açık Kaynak tanımı Debian1 Özgür Yazılım Yönergeleri revize edilerek türetilmiştir. Dolayısıyla Özgür Yazılım ve Açık Kaynak birbirinin neredeyse aynısıdır diyebiliriz. Açık kaynak, el birliği ile yazılımı geliştirme metodolojisini iyileştirmeye odaklanırken Özgür Yazılım  ortaya çıktığı dönemin teknolojisi ve gereği olarak felsefesini ön planda tutar.
 

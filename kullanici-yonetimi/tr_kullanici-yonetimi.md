@@ -41,7 +41,7 @@ Dosyadaki alanların açıklaması
 - Grup numarası(GID)
 - Kullanıcı açıklaması
 - Ev dizini
-- Kullanoıcı kabuğu (SHELL)
+- Kullanıcı kabuğu (SHELL)
 
 > `man 5 passwd` komutu ile dosya içeriği ile ilgili detaylı bilgi alabilirsiniz.
 
@@ -53,7 +53,7 @@ Dosyadaki alanların açıklaması
 cat /etc/group
 ```
 
-"**group**" dosyasından örnek bir satır -kayıt-.
+"**group**" dosyasından örnek birkaç satır -kayıt-.
 
 ``` {echo}
 root:x:0:

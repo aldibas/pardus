@@ -32,11 +32,13 @@ Komut çıktısı:
     127 pts/0    00:00:00 ps
 ```
 
-Sistemdeki tüm süreçleri görüntülemek için `ps aux` komutunu kullanabiliriz.
+Kabuk dışında çalışan süreçleri görüntülemek için ps komutunu, `ps aux` ya da `ps -aux` biçiminde kullanabiliriz. Opsiyonlarda "tire (-)" kullanımı POSIX ve UNIX standartları ile BSD standartları açısından farklılık oluşturabilir.
 
-- **a**: Bütün süreçler
-- **u**: Belirtilen kullanıcıya ait süreçler
-- **t**: Belirtilen terminale ait kullanıcılar
+- **a** : x seçeneğiyle birlikte kullanıldığında tüm süreçleri listeler.
+- **-a** : Uçbirimle ilişkili olmayan süreçler tüm süreçler. (Yönetici hesaplar hariç).
+- **-A** / **-e**  : Tüm süreçler.
+- **u** : Belirtilen kullanıcıya ait süreçler
+- **t** : Belirtilen terminale ait kullanıcılar
 
 ``` {.sh}
 ps aux

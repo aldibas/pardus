@@ -34,7 +34,7 @@ Komut çıktısı:
 
 Kabuk dışında çalışan süreçleri görüntülemek için ps komutunu, `ps aux` ya da `ps -aux` biçiminde kullanabiliriz. Opsiyonlarda "tire (-)" kullanımı POSIX ve UNIX standartları ile BSD standartları açısından farklılık oluşturabilir.
 
-- **a** : x seçeneğiyle birlikte kullanıldığında tüm süreçleri listeler.
+- **a** : BSD tarzı (tire (-) olmadan) bu kullanımda Uçbirim süreçlerinin tümünü listeler. "x" seçeneğiyle birlikte kullanıldığında tüm süreçleri listeler. 
 - **-a** : Uçbirimle ilişkili olmayan süreçler tüm süreçler. (Yönetici hesaplar hariç).
 - **-A** / **-e**  : Tüm süreçler.
 - **u** : Belirtilen kullanıcıya ait süreçler

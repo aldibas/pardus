@@ -2,7 +2,10 @@
 
 <img align="right" width="20%" src="https://do3z7e6uuakno.cloudfront.net/uploads/event/logo/1128612/a302bc555b006d2a46089a5f3873b453.png"> 
 
-**Açık Kaynak -Open Source-**, tıpkı özgür yazılımlar gibi kullanıcıya yazılımı kullanma, anlama, değiştirme ve dağıtma özgürlükleri sunan yazılımdır. Bu topluluk hareketi ise 3 Şubat 1998’de California'da düzenlenen bir strateji oturumunda doğmuştur. Açık Kaynak tanımı Debian1 Özgür Yazılım Yönergeleri revize edilerek türetilmiştir. Dolayısıyla Özgür Yazılım ve Açık Kaynak birbirinin neredeyse aynısıdır diyebiliriz. Açık kaynak, el birliği ile yazılımı geliştirme metodolojisini iyileştirmeye odaklanırken Özgür Yazılım  ortaya çıktığı dönemin teknolojisi ve gereği olarak felsefesini ön planda tutar.
+**Açık Kaynak -Open Source-**, tıpkı özgür yazılımlar gibi kullanıcıya yazılımı kullanma, anlama, değiştirme ve dağıtma özgürlükleri sunan yazılımdır. Açık Kaynak Girişimi (Open Source Initiative, OSI), 1998 yılında Eric S. Raymond ve Bruce Perens tarafından kurulmuş ve aynı yıl, özgür yazılım ilkelerine benzer ilkeler ile "Açık Kaynak Tanımı" (Open Source Definition, OSD) yayınlanmıştır. Bu nedenle, Özgür Yazılım ile Açık Kaynak arasındaki fark temelde yazılımın felsefesi ve hedefleri üzerinedir. 
+</br>
+
+Özgür Yazılım, yazılım kullanıcılarının haklarını koruma ve yazılımın topluma faydalı olması gerektiği üzerinde dururken, Açık Kaynak Girişimi ise yazılımın kaynak koduna erişim ve işbirliği boyutuna vurgu yapar.
 
 Yazılımların dağıtım koşulları aşağıdaki kriterlere uygun olmalıdır:
 
@@ -46,11 +49,9 @@ Lisans, lisanslı yazılımla birlikte dağıtılan diğer yazılıma kısıtlam
 
 Lisans maddeleri bir teknoloji ya da arayüz dayatması yapamaz.
 
-
-
 ### Neden Özgür Yazılım?
 Bilimin gelişmesi elbette bilgininin paylaşılmasıyla mutlak hızına ulaşabilir. İletişimde sembollerin -yazı- kullanılmaya başlaması bilginin gelecek nesillere aktarımını sağlamış ve bilgi birikimi bizi bugünlere taşımıştır. Bilgiyi kapatmadan ‑tekelleştirmeden- insanlığın yararına paylaşmak bizleri geleceğe daha hızlı taşıyacaktır. Bilgiyi açık bir şekilde paylaşmak özgür/açık kaynak yazılım, özgür/açık belge, özgür teknoloji lisansları ile mümkündür. Özgür ve açık kaynak yazılım lisansları, kapalı kaynak -sahipli- yazılım lisanslarının aksine kullanıcıların haklarını korur ve bu lisanslara sahip yazılımlar birlikte üretmeye ‑geliştirmeye- daima açıktır.
->“Özgür” ve “Açık Kaynak” yazılımlara ileriki senaryolarda değineceğiz ancak daha kapsamlı bilgi için [gnu.org](https://gnu.org) ve [opensource.org](https://opensource.org) adreslerini ziyaret edebilirsiniz.
+>“Özgür Yazılım” ve “Açık Kaynak” yazılımlara ileriki senaryolarda değineceğiz ancak aralarındaki farklar ve daha kapsamlı bilgi için [gnu.org](https://gnu.org) ve [opensource.org](https://opensource.org) adreslerini ziyaret edebilirsiniz.
 
 </br>
 </br>

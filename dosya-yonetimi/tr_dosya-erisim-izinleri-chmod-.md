@@ -218,10 +218,10 @@ drwxrwxr-x 2 senol senol 4096 Feb 21 11:11 debian
 -rw-rw-r-- 1 senol senol    0 Feb 21 11:11 pardus.txt
 ```
 
-Bu listede **UMASK** değeri değiştirildikten sonra oluşturulan dosya ve dizinlerin erişim izinleri güncel **UMASK** değerine göre hesaplanmıştır.;
+Bu listede **UMASK** değeri değiştirildikten sonra oluşturulan dosya ve dizinlerin erişim izinleri güncel **UMASK** değerine göre hesaplanmıştır. (bitwise AND);
 
-* pardus.txt dosyası (rw-rw-r--): 666 - 002 = 664 
-* debian dizini (rwxrwxr-x): 777 - 002 = 775
+* pardus.txt dosyası (rw-rw-r--): 666 & ~002 = 664 
+* debian dizini (rwxrwxr-x): 777 & ~002 = 775
 
 </br>
 
